@@ -36,6 +36,8 @@ design:
   replicates:
     prefix: PWEIGHT
     n: 80
+    table: repwgt
+    key: [SCRAM]
     method: sdr
     note: >-
       The 80 person replicate weights PWEIGHT1-80, in each cycle's replicate-weight file. The

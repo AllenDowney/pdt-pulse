@@ -1,7 +1,7 @@
 {
- "pdt_version": "0.2.1",
+ "pdt_version": "0.2.2",
  "inputs_sha256": "c20d6a5d0b0f52998b428b68efec2bb1e1190dbf482a9b12ec22725cd7c448b5",
- "generator_sha256": "5bd837fcfa83e3bb04c37847b6e1662f093b130380ce5a4ef1067334b670c30d",
+ "generator_sha256": "6708a578169493f69fc6f399572ef26b8ef504c92cfe881d96369c48f83bc0cd",
  "dataset": "pulse",
  "max_tokens": 20000,
  "shards": [

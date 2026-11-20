@@ -1,6 +1,6 @@
 {
  "pdt_version": "0.1.0",
- "inputs_sha256": "51fed01af4d49185e7b38f8bc56c98717f8a88ef52f5a8efb5ef048ab4050c70",
+ "inputs_sha256": "23ae4b39562abcc5c33625ae0c560991b96b8c8426cc8ace1893ee5a7fb5a85f",
  "dataset": "pulse",
  "files": [
   ".nojekyll",
@@ -376,8 +376,6 @@
   "variables/puf/SEXUAL_ORIENTATION%40week54.html",
   "variables/puf/SEXUAL_ORIENTATION%40week55.html",
   "variables/puf/SEXUAL_ORIENTATION.html",
-  "variables/puf/TBIRTH_YEAR%40cycle03.html",
-  "variables/puf/TBIRTH_YEAR%40week12.html",
   "variables/puf/TBIRTH_YEAR%40week21.html",
   "variables/puf/TBIRTH_YEAR%40week40.html",
   "variables/puf/TBIRTH_YEAR%40week52.html",

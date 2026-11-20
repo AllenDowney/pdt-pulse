@@ -17,8 +17,9 @@ Where each field comes from (STANDARD.md §3):
 - measure, variable_type: build/slice.yaml (hand), by kind.
 - the replicate weights PWEIGHT1-80: the dictionary describes them once (or not at all);
   their records are made by rule hps_replicate_series.
-- links between consecutive cycles: rule hps_same_name_same_dictionary, or Census's user notes
-  where they state a change (slice.yaml `documented_changes`).
+- links between consecutive cycles: rule hps_same_name_same_dictionary (0.2: `range_changed` when
+  only the valid range moves), or Census's user notes where they state a change (slice.yaml
+  `documented_changes`), with the quote as `evidence`.
 """
 
 import json
@@ -40,7 +41,7 @@ import hps  # noqa: E402
 META = ROOT / "metadata"
 DATASET = "pulse"
 RULES = {"strip": ("hps_strip_x000d", "0.1"), "missing": ("hps_missing_types", "0.1"),
-         "series": ("hps_replicate_series", "0.1"), "links": ("hps_same_name_same_dictionary", "0.1")}
+         "series": ("hps_replicate_series", "0.1"), "links": ("hps_same_name_same_dictionary", "0.2")}
 # Missing types by the dictionary's label (rule hps_missing_types).
 TYPES = {"question seen but category not selected": ["skipped"], "missing / did not report": ["no_answer"]}
 
@@ -167,7 +168,7 @@ def build_repwgt(release, wave, source, book, cfg, puf_names):
     return out
 
 
-def links_between(old, new, recs_old, recs_new, cfg):
+def links_between(old, new, recs_old, recs_new, cfg, sources):
     rule, version = RULES["links"]
     by_new = {r["name"]: r for r in recs_new}
     out, report = [], []
@@ -184,10 +185,15 @@ def links_between(old, new, recs_old, recs_new, cfg):
             notes.append("question wording changed")
         va = {str(v["code"]): v.get("label") for v in r.get("values", [])}
         vb = {str(v["code"]): v.get("label") for v in s.get("values", [])}
-        if set(va) != set(vb) or r.get("valid_range") != s.get("valid_range"):
+        if set(va) != set(vb):
             relations.append("codes_changed")
-            notes.append(f"codes or range: {sorted(set(va) ^ set(vb)) or ''} "
-                         f"{r.get('valid_range')} -> {s.get('valid_range')}".strip())
+            notes.append(f"codes in one cycle only: {sorted(set(va) ^ set(vb))}")
+        ra = {k: v for k, v in (r.get("valid_range") or {}).items() if k != "note"}
+        rb = {k: v for k, v in (s.get("valid_range") or {}).items() if k != "note"}
+        if ra != rb:
+            # The range or top code moved; every listed code keeps its meaning (STANDARD §5.2).
+            relations.append("range_changed")
+            notes.append(f"valid range {ra or None} -> {rb or None}")
         changed = [c for c in va if c in vb and is_change(compare_text(va[c], vb[c]))]
         if changed or is_change(compare_text(r.get("label"), s.get("label"))):
             relations.append("labels_changed")
@@ -195,18 +201,19 @@ def links_between(old, new, recs_old, recs_new, cfg):
             if is_change(compare_text(r.get("label"), s.get("label"))):
                 notes.append(f"label {r.get('label')!r} -> {s.get('label')!r}")
         doc = documented.get((new, r["name"]))
+        link = {"from": {"release": old, "table": "puf", "name": r["name"]},
+                "to": {"release": new, "table": "puf", "name": r["name"]}}
         if doc:
             if doc["relation"] not in relations:
                 report.append(f"- `{r['name']}` {old}->{new}: Census documents {doc['relation']}, "
                               "but the dictionaries don't show it")
                 relations.append(doc["relation"])
-            origin = {"origin": "publisher", "source": doc["source"], "location": doc["location"],
-                      "note": f"\"{doc['quote']}\""}
+            origin = {"origin": "publisher", "source": doc["source"], "location": doc["location"]}
+            link["evidence"] = [{"citation": f"U.S. Census Bureau, {sources[doc['source']]['title']}, {doc['location']}",
+                                 "url": sources[doc["source"]]["url"], "quote": doc["quote"]}]
         else:
             origin = {"origin": "rule", "rule": rule, "rule_version": version, "source": s["provenance"]["record"]["source"]}
-        out.append({"from": {"release": old, "table": "puf", "name": r["name"]},
-                    "to": {"release": new, "table": "puf", "name": r["name"]}, "relations": relations,
-                    "origin": origin,
+        out.append({**link, "relations": relations, "origin": origin,
                     "note": "The same name in consecutive cycles; their dictionaries compared."
                             + (" Changed: " + "; ".join(notes) + "." if notes else "")})
     return out, report
@@ -215,6 +222,7 @@ def links_between(old, new, recs_old, recs_new, cfg):
 def main():
     cfg = yaml.safe_load((ROOT / "build" / "slice.yaml").read_text())
     ds = yaml.safe_load((ROOT / "dataset.yaml").read_text())
+    sources = {x["id"]: x for x in yaml.safe_load((ROOT / "sources.yaml").read_text())["sources"]}
     report, groups, links, built = [], [], [], []
     for r in ds["releases"]:
         release = r["id"]
@@ -243,7 +251,7 @@ def main():
         report.append(f"- {release}: {len(puf)} puf records; not in this cycle: {', '.join(missing) or 'none'}")
         built.append((release, puf))
     for (old, a), (new, b) in zip(built, built[1:]):
-        more, lines = links_between(old, new, a, b, cfg)
+        more, lines = links_between(old, new, a, b, cfg, sources)
         links += more
         report += lines
     jsonl(META / "groups.jsonl", groups)

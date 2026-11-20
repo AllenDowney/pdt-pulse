@@ -1,0 +1,79 @@
+# Build the human-readable site (docs/) and publish it with GitHub Pages.
+#
+# STANDARD.md §2 ("Large views"): agent/ and export/ are committed, but docs/ may be left
+# out of git (listed in .gitignore) once it passes about 25 MB, and built here instead.
+# It needs no data: the site is generated from dataset.yaml and metadata/ alone.
+#
+# The toolkit is checked out at the template version this repo was made from, the
+# `_commit` in .copier-answers.yml, so the site is built by the library the repo was
+# checked against. After `copier update`, the new tag is used.
+#
+# To use it: in the repository's Settings > Pages, set Source to "GitHub Actions".
+# Until then this workflow runs but the deploy step fails, and nothing is published.
+
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the dataset repo
+        uses: actions/checkout@v4
+
+      - name: Read the toolkit version this repo was made from
+        id: toolkit
+        run: |
+          tag=$(sed -n 's/^_commit: *//p' .copier-answers.yml | tr -d "'\"")
+          if [ -z "$tag" ]; then
+            echo "No _commit in .copier-answers.yml; can't tell which toolkit version to use" >&2
+            exit 1
+          fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+      - name: Check out the toolkit at that version
+        uses: actions/checkout@v4
+        with:
+          repository: AllenDowney/PublicDataToolkit
+          ref: ${{ steps.toolkit.outputs.tag }}
+          path: _toolkit
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the toolkit, without the data extra (the site needs no pandas)
+        run: pip install ./_toolkit
+
+      - name: Build docs/ (no data needed)
+        run: make views PYTHON=python PDT=_toolkit VIEWS_ARGS="--only site"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

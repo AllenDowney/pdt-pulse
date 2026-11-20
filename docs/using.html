@@ -24,7 +24,7 @@
 <pre>make download ARGS=--accept-terms   # the publisher's files, after reading their terms
 make data                           # data/processed/*.parquet, checked cell by cell</pre>
 <p>One file per release and table, such as <code>data/processed/pulse-cycle09-puf.parquet</code>. Each variable has a value column with the valid answers, and, when it has missing or unresolved codes, a <code>&lt;name&gt;__code</code> column holding the code, as text, wherever the value is missing. So a missing code never looks like an answer, and nothing the publisher recorded is lost: <code>pdt.data.rebuild</code> puts the publisher's codes back. <code>pdt.common_format</code> has the file names and code texts.</p>
-<p>In Python, <code>pdt.extract.extract(".", release, [names], missing={...})</code> writes an extract, recoding each missing type as you say.</p>
+<p>For an extract, name the variables and say what to do with each missing type:</p><pre>python scripts/extract.py --release cycle09 --table puf --vars NAME1,NAME2 --missing dk=DK refused=DK --out extract.csv</pre><p>Every other missing value is null, unresolved codes too unless you ask, and what the extract relied on goes to stderr.</p>
 <h2 id="records">Using the records from Python</h2><p>The records are JSONL, one record per line, in <code>metadata/releases/&lt;release&gt;/[&lt;table&gt;/]variables.jsonl</code>, with <code>groups.jsonl</code>, <code>links.jsonl</code> and <code>corrections.jsonl</code> beside them. Anything can read them. The PublicDataToolkit library applies the corrections and answers labeled searches:</p><pre>from pdt.check import Repo
 from pdt.search import Index, search
 

@@ -1,7 +1,8 @@
 # Changes here will be overwritten by Copier; do not edit by hand.
-_commit: v0.1.0
+_commit: v0.2.1
 _src_path: /home/downey/PublicDataToolkit
 citation: ''
+copyright_holder: Allen Downey
 dataset_id: pulse
 dataset_url: https://www.census.gov/programs-surveys/household-pulse-survey.html
 description: The Census Bureau's online survey of US adults on how the COVID-19 pandemic

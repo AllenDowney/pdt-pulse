@@ -12,6 +12,11 @@
 body { margin: 0; background: var(--bg); color: var(--fg);
   font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
 nav, main, footer { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+nav .pages { float: right; }
+.notice { margin: 0 0 8px; color: var(--fg); }
+.notice-box { background: var(--warn-bg); color: var(--warn-fg); padding: 10px 14px; border-radius: 6px; }
+ul.toc { columns: 2; }
+@media (max-width: 600px) { nav .pages { float: none; display: block; } ul.toc { columns: 1; } }
 nav { padding-top: 16px; color: var(--muted); font-size: 14px; }
 footer { padding: 32px 16px; color: var(--muted); font-size: 13px; }
 a { color: var(--accent); }

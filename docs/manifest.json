@@ -1,10 +1,11 @@
 {
  "pdt_version": "0.1.0",
  "inputs_sha256": "bc1a37b058ec2e1b0d9666d642fc298e38736baa5b625574a0f9f7eaaa829125",
- "generator_sha256": "9ccfde4fa108cb2b4d7e1cdf675082febafe78bc8e89a2be78db6a98e3a26059",
+ "generator_sha256": "feed02ead6fb62dd3ce5164d7c62ab1bc77fefdf83e06a7164b95afa87aba2cf",
  "dataset": "pulse",
  "files": [
   ".nojekyll",
+  "about.html",
   "changes/cycle01--cycle02.html",
   "changes/cycle02--cycle03.html",
   "changes/cycle03--cycle04.html",
@@ -295,6 +296,7 @@
   "releases/week63-repwgt.html",
   "search-index.js",
   "style.css",
+  "using.html",
   "variables/puf/ANXIOUS.html",
   "variables/puf/CURFOODSUF.html",
   "variables/puf/CYCLE.html",

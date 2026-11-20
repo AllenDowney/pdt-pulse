@@ -29,8 +29,29 @@ def zip_members(path):
     with zipfile.ZipFile(path) as z:
         names = z.namelist()
     pick = lambda pat: next((n for n in names if re.search(pat, n, re.I)), None)  # noqa: E731
-    return {"dictionary": pick(r"dictionary.*\.xlsx$"), "puf": pick(r"_puf_\d+\.csv$|puf_?\d*\.csv$"),
-            "repwgt": pick(r"repwgt.*\.csv$")}
+    return {"dictionary": pick(r"dictionary.*\.xlsx$"), "puf": pick(r"_puf_\d+\.(csv|sas7bdat)$|puf_?\d*\.csv$"),
+            "repwgt": pick(r"repwgt.*\.(csv|sas7bdat)$")}
+
+
+def header(zip_path, member):
+    """The column names of a CSV member (its first line), or of a SAS member (pyreadstat)."""
+    return list(column_types(zip_path, member))
+
+
+def column_types(zip_path, member):
+    """{column: type}: "string" or "double" for a SAS member (pyreadstat); None for a CSV's columns,
+    whose types the file doesn't state."""
+    with zipfile.ZipFile(zip_path) as z:
+        if member.endswith(".csv"):
+            with z.open(member) as f:
+                return dict.fromkeys(f.readline().decode("latin-1").strip().split(","))
+        import tempfile
+        import pyreadstat
+        with tempfile.NamedTemporaryFile(suffix=".sas7bdat") as tmp:
+            tmp.write(z.read(member))
+            tmp.flush()
+            _, meta = pyreadstat.read_sas7bdat(tmp.name, metadataonly=True)
+            return dict(meta.readstat_variable_types)
 
 
 def values_of(text):

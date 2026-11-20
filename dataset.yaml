@@ -864,11 +864,11 @@ releases:
     sources: [hps-week55, hps-user-notes-phase3-8]
     tables:
       - id: puf
-        label: "Public use file (HPS_Week55_PUF_CSV.zip: the PUF CSV)"
+        label: "Public use file (HPS_Week55_PUF_SAS.zip: the PUF, SAS)"
         sources: [hps-week55]
         key: [SCRAM]
       - id: repwgt
-        label: "Person replicate weights (HPS_Week55_PUF_CSV.zip: the replicate-weight CSV)"
+        label: "Person replicate weights (HPS_Week55_PUF_SAS.zip: the replicate weights, SAS)"
         sources: [hps-week55]
         key: [SCRAM]
         references:

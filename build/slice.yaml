@@ -53,3 +53,33 @@ documented_changes:
     source: hps-user-notes-phase3-2
     location: "pp. 1-2, Updated Questions for Phase 3.2 (\"Beginning with Week 34\")"
     quote: "Mental health question battery - reference period for the four mental health questions on feeling anxious, worrying, losing interest, and feeling down has been changed from last 7 days to previous two weeks"
+  - first: week46
+    variables: [INCOME]
+    relation: wording_changed
+    source: hps-user-notes-phase3-5
+    location: "the updated questions listed under \"New Questions for Phase 3.5\" (after VAC2_BOOSTER)"
+    quote: "The question asking about household income (INCOME) has been updated to reflect data year 2021 (previous version asked about 2020)."
+  - first: week58
+    variables: [RHISPANIC, RRACE]
+    relation: wording_changed
+    source: hps-user-notes-phase3-9
+    location: "New Content for Phase 3.9"
+    quote: "Race_sp: Detailed race/ethnicity items. The Hispanic Origin and Race questions (D2 and D3 respectively) were replaced with a combined race and ethnicity question."
+  - first: week61
+    variables: [RHISPANIC]
+    relation: wording_changed
+    source: hps-user-notes-phase3-10
+    location: "New Content for Phase 3.10"
+    quote: "D2: Original Hispanic origin question. This question replaced the previously combined race/ethnicity question."
+  - first: week61
+    variables: [RRACE]
+    relation: wording_changed
+    source: hps-user-notes-phase3-10
+    location: "New Content for Phase 3.10"
+    quote: "D3: Original race question. This question asks respondents to indicate and specify their race. This question replaces the previously combined race/ethnicity question."
+  - first: week61
+    variables: [GENID_DESCRIBE]
+    relation: wording_changed
+    source: hps-user-notes-phase3-10
+    location: "New Content for Phase 3.10"
+    quote: "D7_ALT: Gender. This question replaced the previous gender question. This question asks respondents to describe what gender identity they currently use to describe themselves."

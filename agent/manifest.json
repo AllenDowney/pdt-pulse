@@ -1,0 +1,7386 @@
+{
+ "pdt_version": "0.1.0",
+ "inputs_sha256": "625001209ffe43bf2accf5bc4637fb8a2c2c9880a5fbd1603ac69b9c4c37f68a",
+ "dataset": "pulse",
+ "max_tokens": 20000,
+ "shards": [
+  {
+   "kind": "table",
+   "title": "Release week01, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week01/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week01",
+    "table": "puf"
+   },
+   "releases": [
+    "week01"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week01-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week01-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week01, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week01/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week01",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week01"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week01-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week01-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week02, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week02/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week02",
+    "table": "puf"
+   },
+   "releases": [
+    "week02"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week02-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week02-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week02, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week02/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week02",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week02"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week02-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week02-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week03, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week03/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week03",
+    "table": "puf"
+   },
+   "releases": [
+    "week03"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week03-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week03-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week03, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week03/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week03",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week03"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week03-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week03-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week04, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week04/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week04",
+    "table": "puf"
+   },
+   "releases": [
+    "week04"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week04-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week04-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week04, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week04/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week04",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week04"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week04-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week04-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week05, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week05/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week05",
+    "table": "puf"
+   },
+   "releases": [
+    "week05"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week05-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week05-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week05, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week05/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week05",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week05"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week05-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week05-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week06, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week06/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week06",
+    "table": "puf"
+   },
+   "releases": [
+    "week06"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week06-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week06-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week06, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week06/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week06",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week06"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week06-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week06-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week07, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week07/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week07",
+    "table": "puf"
+   },
+   "releases": [
+    "week07"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week07-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week07-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week07, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week07/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week07",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week07"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week07-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week07-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week08, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week08/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week08",
+    "table": "puf"
+   },
+   "releases": [
+    "week08"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week08-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week08-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week08, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week08/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week08",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week08"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week08-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week08-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week09, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week09/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week09",
+    "table": "puf"
+   },
+   "releases": [
+    "week09"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week09-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week09-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week09, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week09/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week09",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week09"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week09-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week09-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week10, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week10/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week10",
+    "table": "puf"
+   },
+   "releases": [
+    "week10"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week10-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week10-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week10, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week10/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week10",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week10"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week10-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week10-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week11, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week11/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week11",
+    "table": "puf"
+   },
+   "releases": [
+    "week11"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week11-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week11-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week11, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week11/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week11",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week11"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week11-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week11-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week12, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week12/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week12",
+    "table": "puf"
+   },
+   "releases": [
+    "week12"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week12-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4975
+    },
+    {
+     "path": "shards/table/week12-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 898
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week12, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week12/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week12",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week12"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week12-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week12-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week13, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week13/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week13",
+    "table": "puf"
+   },
+   "releases": [
+    "week13"
+   ],
+   "n_in_scope": 20,
+   "rule_versions": {},
+   "notes": [],
+   "count": 20,
+   "files": [
+    {
+     "path": "shards/table/week13-puf.jsonl",
+     "form": "jsonl",
+     "variables": 20,
+     "tokens": 5117
+    },
+    {
+     "path": "shards/table/week13-puf.txt",
+     "form": "txt",
+     "variables": 20,
+     "tokens": 905
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week13, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week13/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week13",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week13"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week13-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week13-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week14, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week14/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week14",
+    "table": "puf"
+   },
+   "releases": [
+    "week14"
+   ],
+   "n_in_scope": 20,
+   "rule_versions": {},
+   "notes": [],
+   "count": 20,
+   "files": [
+    {
+     "path": "shards/table/week14-puf.jsonl",
+     "form": "jsonl",
+     "variables": 20,
+     "tokens": 5117
+    },
+    {
+     "path": "shards/table/week14-puf.txt",
+     "form": "txt",
+     "variables": 20,
+     "tokens": 905
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week14, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week14/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week14",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week14"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week14-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week14-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week15, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week15/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week15",
+    "table": "puf"
+   },
+   "releases": [
+    "week15"
+   ],
+   "n_in_scope": 20,
+   "rule_versions": {},
+   "notes": [],
+   "count": 20,
+   "files": [
+    {
+     "path": "shards/table/week15-puf.jsonl",
+     "form": "jsonl",
+     "variables": 20,
+     "tokens": 5117
+    },
+    {
+     "path": "shards/table/week15-puf.txt",
+     "form": "txt",
+     "variables": 20,
+     "tokens": 905
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week15, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week15/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week15",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week15"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week15-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week15-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week16, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week16/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week16",
+    "table": "puf"
+   },
+   "releases": [
+    "week16"
+   ],
+   "n_in_scope": 20,
+   "rule_versions": {},
+   "notes": [],
+   "count": 20,
+   "files": [
+    {
+     "path": "shards/table/week16-puf.jsonl",
+     "form": "jsonl",
+     "variables": 20,
+     "tokens": 5117
+    },
+    {
+     "path": "shards/table/week16-puf.txt",
+     "form": "txt",
+     "variables": 20,
+     "tokens": 905
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week16, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week16/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week16",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week16"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week16-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week16-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week17, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week17/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week17",
+    "table": "puf"
+   },
+   "releases": [
+    "week17"
+   ],
+   "n_in_scope": 20,
+   "rule_versions": {},
+   "notes": [],
+   "count": 20,
+   "files": [
+    {
+     "path": "shards/table/week17-puf.jsonl",
+     "form": "jsonl",
+     "variables": 20,
+     "tokens": 5117
+    },
+    {
+     "path": "shards/table/week17-puf.txt",
+     "form": "txt",
+     "variables": 20,
+     "tokens": 905
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week17, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week17/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week17",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week17"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week17-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week17-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week18, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week18/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week18",
+    "table": "puf"
+   },
+   "releases": [
+    "week18"
+   ],
+   "n_in_scope": 20,
+   "rule_versions": {},
+   "notes": [],
+   "count": 20,
+   "files": [
+    {
+     "path": "shards/table/week18-puf.jsonl",
+     "form": "jsonl",
+     "variables": 20,
+     "tokens": 5117
+    },
+    {
+     "path": "shards/table/week18-puf.txt",
+     "form": "txt",
+     "variables": 20,
+     "tokens": 905
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week18, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week18/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week18",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week18"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week18-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week18-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week19, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week19/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week19",
+    "table": "puf"
+   },
+   "releases": [
+    "week19"
+   ],
+   "n_in_scope": 20,
+   "rule_versions": {},
+   "notes": [],
+   "count": 20,
+   "files": [
+    {
+     "path": "shards/table/week19-puf.jsonl",
+     "form": "jsonl",
+     "variables": 20,
+     "tokens": 5117
+    },
+    {
+     "path": "shards/table/week19-puf.txt",
+     "form": "txt",
+     "variables": 20,
+     "tokens": 905
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week19, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week19/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week19",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week19"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week19-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week19-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week20, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week20/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week20",
+    "table": "puf"
+   },
+   "releases": [
+    "week20"
+   ],
+   "n_in_scope": 20,
+   "rule_versions": {},
+   "notes": [],
+   "count": 20,
+   "files": [
+    {
+     "path": "shards/table/week20-puf.jsonl",
+     "form": "jsonl",
+     "variables": 20,
+     "tokens": 5117
+    },
+    {
+     "path": "shards/table/week20-puf.txt",
+     "form": "txt",
+     "variables": 20,
+     "tokens": 905
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week20, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week20/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week20",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week20"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week20-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week20-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week21, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week21/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week21",
+    "table": "puf"
+   },
+   "releases": [
+    "week21"
+   ],
+   "n_in_scope": 20,
+   "rule_versions": {},
+   "notes": [],
+   "count": 20,
+   "files": [
+    {
+     "path": "shards/table/week21-puf.jsonl",
+     "form": "jsonl",
+     "variables": 20,
+     "tokens": 5117
+    },
+    {
+     "path": "shards/table/week21-puf.txt",
+     "form": "txt",
+     "variables": 20,
+     "tokens": 905
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week21, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week21/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week21",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week21"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week21-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week21-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week22, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week22/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week22",
+    "table": "puf"
+   },
+   "releases": [
+    "week22"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week22-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4764
+    },
+    {
+     "path": "shards/table/week22-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 848
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week22, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week22/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week22",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week22"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week22-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week22-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week23, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week23/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week23",
+    "table": "puf"
+   },
+   "releases": [
+    "week23"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week23-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4764
+    },
+    {
+     "path": "shards/table/week23-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 848
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week23, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week23/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week23",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week23"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week23-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week23-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week24, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week24/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week24",
+    "table": "puf"
+   },
+   "releases": [
+    "week24"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week24-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4764
+    },
+    {
+     "path": "shards/table/week24-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 848
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week24, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week24/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week24",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week24"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week24-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week24-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week25, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week25/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week25",
+    "table": "puf"
+   },
+   "releases": [
+    "week25"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week25-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4764
+    },
+    {
+     "path": "shards/table/week25-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 848
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week25, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week25/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week25",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week25"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week25-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week25-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week26, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week26/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week26",
+    "table": "puf"
+   },
+   "releases": [
+    "week26"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week26-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4777
+    },
+    {
+     "path": "shards/table/week26-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 861
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week26, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week26/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week26",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week26"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week26-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week26-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week27, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week27/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week27",
+    "table": "puf"
+   },
+   "releases": [
+    "week27"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week27-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4777
+    },
+    {
+     "path": "shards/table/week27-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 861
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week27, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week27/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week27",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week27"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week27-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week27-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week28, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week28/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week28",
+    "table": "puf"
+   },
+   "releases": [
+    "week28"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week28-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4800
+    },
+    {
+     "path": "shards/table/week28-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 884
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week28, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week28/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week28",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week28"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week28-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week28-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week29, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week29/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week29",
+    "table": "puf"
+   },
+   "releases": [
+    "week29"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week29-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4800
+    },
+    {
+     "path": "shards/table/week29-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 884
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week29, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week29/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week29",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week29"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week29-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week29-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week30, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week30/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week30",
+    "table": "puf"
+   },
+   "releases": [
+    "week30"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week30-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4800
+    },
+    {
+     "path": "shards/table/week30-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 884
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week30, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week30/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week30",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week30"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week30-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week30-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week31, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week31/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week31",
+    "table": "puf"
+   },
+   "releases": [
+    "week31"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week31-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4800
+    },
+    {
+     "path": "shards/table/week31-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 884
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week31, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week31/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week31",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week31"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week31-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week31-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week32, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week32/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week32",
+    "table": "puf"
+   },
+   "releases": [
+    "week32"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week32-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4800
+    },
+    {
+     "path": "shards/table/week32-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 884
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week32, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week32/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week32",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week32"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week32-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week32-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week33, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week33/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week33",
+    "table": "puf"
+   },
+   "releases": [
+    "week33"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/week33-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4800
+    },
+    {
+     "path": "shards/table/week33-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 884
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week33, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week33/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week33",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week33"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week33-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week33-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week34, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week34/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week34",
+    "table": "puf"
+   },
+   "releases": [
+    "week34"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week34-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5342
+    },
+    {
+     "path": "shards/table/week34-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 918
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week34, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week34/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week34",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week34"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week34-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week34-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week35, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week35/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week35",
+    "table": "puf"
+   },
+   "releases": [
+    "week35"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week35-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5342
+    },
+    {
+     "path": "shards/table/week35-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 918
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week35, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week35/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week35",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week35"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week35-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week35-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week36, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week36/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week36",
+    "table": "puf"
+   },
+   "releases": [
+    "week36"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week36-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5342
+    },
+    {
+     "path": "shards/table/week36-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 918
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week36, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week36/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week36",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week36"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week36-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week36-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week37, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week37/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week37",
+    "table": "puf"
+   },
+   "releases": [
+    "week37"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week37-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5342
+    },
+    {
+     "path": "shards/table/week37-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 918
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week37, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week37/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week37",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week37"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week37-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week37-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week38, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week38/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week38",
+    "table": "puf"
+   },
+   "releases": [
+    "week38"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week38-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5338
+    },
+    {
+     "path": "shards/table/week38-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 918
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week38, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week38/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week38",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week38"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week38-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week38-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week39, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week39/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week39",
+    "table": "puf"
+   },
+   "releases": [
+    "week39"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week39-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5338
+    },
+    {
+     "path": "shards/table/week39-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 918
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week39, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week39/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week39",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week39"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week39-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week39-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week40, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week40/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week40",
+    "table": "puf"
+   },
+   "releases": [
+    "week40"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week40-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5338
+    },
+    {
+     "path": "shards/table/week40-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 918
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week40, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week40/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week40",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week40"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week40-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week40-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week41, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week41/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week41",
+    "table": "puf"
+   },
+   "releases": [
+    "week41"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week41-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week41-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week41, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week41/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week41",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week41"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week41-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week41-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week42, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week42/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week42",
+    "table": "puf"
+   },
+   "releases": [
+    "week42"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week42-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week42-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week42, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week42/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week42",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week42"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week42-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week42-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week43, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week43/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week43",
+    "table": "puf"
+   },
+   "releases": [
+    "week43"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week43-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week43-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week43, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week43/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week43",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week43"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week43-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week43-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week44, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week44/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week44",
+    "table": "puf"
+   },
+   "releases": [
+    "week44"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week44-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week44-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week44, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week44/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week44",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week44"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week44-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week44-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week45, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week45/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week45",
+    "table": "puf"
+   },
+   "releases": [
+    "week45"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week45-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week45-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week45, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week45/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week45",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week45"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week45-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week45-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week46, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week46/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week46",
+    "table": "puf"
+   },
+   "releases": [
+    "week46"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week46-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week46-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week46, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week46/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week46",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week46"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week46-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week46-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week47, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week47/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week47",
+    "table": "puf"
+   },
+   "releases": [
+    "week47"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week47-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week47-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week47, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week47/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week47",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week47"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week47-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week47-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week48, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week48/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week48",
+    "table": "puf"
+   },
+   "releases": [
+    "week48"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week48-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week48-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week48, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week48/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week48",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week48"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week48-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week48-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week49, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week49/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week49",
+    "table": "puf"
+   },
+   "releases": [
+    "week49"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week49-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week49-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week49, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week49/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week49",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week49"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week49-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week49-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week50, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week50/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week50",
+    "table": "puf"
+   },
+   "releases": [
+    "week50"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week50-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week50-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week50, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week50/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week50",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week50"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week50-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week50-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week51, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week51/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week51",
+    "table": "puf"
+   },
+   "releases": [
+    "week51"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week51-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5336
+    },
+    {
+     "path": "shards/table/week51-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week51, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week51/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week51",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week51"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week51-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week51-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week52, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week52/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week52",
+    "table": "puf"
+   },
+   "releases": [
+    "week52"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week52-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5343
+    },
+    {
+     "path": "shards/table/week52-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week52, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week52/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week52",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week52"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week52-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week52-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week53, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week53/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week53",
+    "table": "puf"
+   },
+   "releases": [
+    "week53"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week53-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5343
+    },
+    {
+     "path": "shards/table/week53-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week53, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week53/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week53",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week53"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week53-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week53-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week54, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week54/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week54",
+    "table": "puf"
+   },
+   "releases": [
+    "week54"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week54-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5343
+    },
+    {
+     "path": "shards/table/week54-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week54, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week54/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week54",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week54"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week54-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week54-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week55, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week55/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week55",
+    "table": "puf"
+   },
+   "releases": [
+    "week55"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week55-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 6258
+    },
+    {
+     "path": "shards/table/week55-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week55, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week55/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week55",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week55"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week55-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week55-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week56, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week56/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week56",
+    "table": "puf"
+   },
+   "releases": [
+    "week56"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week56-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5343
+    },
+    {
+     "path": "shards/table/week56-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week56, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week56/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week56",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week56"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week56-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week56-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week57, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week57/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week57",
+    "table": "puf"
+   },
+   "releases": [
+    "week57"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week57-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5343
+    },
+    {
+     "path": "shards/table/week57-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 916
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week57, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week57/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week57",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week57"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week57-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week57-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week58, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week58/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week58",
+    "table": "puf"
+   },
+   "releases": [
+    "week58"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week58-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5352
+    },
+    {
+     "path": "shards/table/week58-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 925
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week58, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week58/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week58",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week58"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week58-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week58-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week59, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week59/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week59",
+    "table": "puf"
+   },
+   "releases": [
+    "week59"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week59-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5352
+    },
+    {
+     "path": "shards/table/week59-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 925
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week59, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week59/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week59",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week59"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week59-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week59-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week60, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week60/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week60",
+    "table": "puf"
+   },
+   "releases": [
+    "week60"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week60-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5352
+    },
+    {
+     "path": "shards/table/week60-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 925
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week60, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week60/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week60",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week60"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week60-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week60-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week61, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week61/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week61",
+    "table": "puf"
+   },
+   "releases": [
+    "week61"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week61-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5400
+    },
+    {
+     "path": "shards/table/week61-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 910
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week61, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week61/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week61",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week61"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week61-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week61-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week62, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week62/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week62",
+    "table": "puf"
+   },
+   "releases": [
+    "week62"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week62-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5400
+    },
+    {
+     "path": "shards/table/week62-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 910
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week62, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week62/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week62",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week62"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week62-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week62-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week63, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week63/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week63",
+    "table": "puf"
+   },
+   "releases": [
+    "week63"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/week63-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5400
+    },
+    {
+     "path": "shards/table/week63-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 910
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release week63, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/week63/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "week63",
+    "table": "repwgt"
+   },
+   "releases": [
+    "week63"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/week63-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 6990
+    },
+    {
+     "path": "shards/table/week63-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1545
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle01, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle01/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle01",
+    "table": "puf"
+   },
+   "releases": [
+    "cycle01"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/cycle01-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5049
+    },
+    {
+     "path": "shards/table/cycle01-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 917
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle01, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle01/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle01",
+    "table": "repwgt"
+   },
+   "releases": [
+    "cycle01"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/cycle01-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 7045
+    },
+    {
+     "path": "shards/table/cycle01-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1583
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle02, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle02/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle02",
+    "table": "puf"
+   },
+   "releases": [
+    "cycle02"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/cycle02-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5049
+    },
+    {
+     "path": "shards/table/cycle02-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 917
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle02, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle02/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle02",
+    "table": "repwgt"
+   },
+   "releases": [
+    "cycle02"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/cycle02-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 7045
+    },
+    {
+     "path": "shards/table/cycle02-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1583
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle03, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle03/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle03",
+    "table": "puf"
+   },
+   "releases": [
+    "cycle03"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/cycle03-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5049
+    },
+    {
+     "path": "shards/table/cycle03-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 917
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle03, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle03/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle03",
+    "table": "repwgt"
+   },
+   "releases": [
+    "cycle03"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/cycle03-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 7045
+    },
+    {
+     "path": "shards/table/cycle03-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1583
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle04, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle04/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle04",
+    "table": "puf"
+   },
+   "releases": [
+    "cycle04"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/cycle04-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5332
+    },
+    {
+     "path": "shards/table/cycle04-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 917
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle04, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle04/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle04",
+    "table": "repwgt"
+   },
+   "releases": [
+    "cycle04"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/cycle04-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 7045
+    },
+    {
+     "path": "shards/table/cycle04-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1583
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle05, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle05/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle05",
+    "table": "puf"
+   },
+   "releases": [
+    "cycle05"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/cycle05-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5388
+    },
+    {
+     "path": "shards/table/cycle05-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 922
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle05, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle05/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle05",
+    "table": "repwgt"
+   },
+   "releases": [
+    "cycle05"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/cycle05-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 7053
+    },
+    {
+     "path": "shards/table/cycle05-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1588
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle06, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle06/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle06",
+    "table": "puf"
+   },
+   "releases": [
+    "cycle06"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/cycle06-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5388
+    },
+    {
+     "path": "shards/table/cycle06-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 922
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle06, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle06/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle06",
+    "table": "repwgt"
+   },
+   "releases": [
+    "cycle06"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/cycle06-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 7053
+    },
+    {
+     "path": "shards/table/cycle06-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1588
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle07, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle07/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle07",
+    "table": "puf"
+   },
+   "releases": [
+    "cycle07"
+   ],
+   "n_in_scope": 21,
+   "rule_versions": {},
+   "notes": [],
+   "count": 21,
+   "files": [
+    {
+     "path": "shards/table/cycle07-puf.jsonl",
+     "form": "jsonl",
+     "variables": 21,
+     "tokens": 5388
+    },
+    {
+     "path": "shards/table/cycle07-puf.txt",
+     "form": "txt",
+     "variables": 21,
+     "tokens": 922
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle07, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle07/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle07",
+    "table": "repwgt"
+   },
+   "releases": [
+    "cycle07"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/cycle07-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 7053
+    },
+    {
+     "path": "shards/table/cycle07-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1588
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle08, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle08/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle08",
+    "table": "puf"
+   },
+   "releases": [
+    "cycle08"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/cycle08-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4796
+    },
+    {
+     "path": "shards/table/cycle08-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 854
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle08, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle08/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle08",
+    "table": "repwgt"
+   },
+   "releases": [
+    "cycle08"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/cycle08-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 7053
+    },
+    {
+     "path": "shards/table/cycle08-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1588
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle09, table puf",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle09/puf/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle09",
+    "table": "puf"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 19,
+   "rule_versions": {},
+   "notes": [],
+   "count": 19,
+   "files": [
+    {
+     "path": "shards/table/cycle09-puf.jsonl",
+     "form": "jsonl",
+     "variables": 19,
+     "tokens": 4796
+    },
+    {
+     "path": "shards/table/cycle09-puf.txt",
+     "form": "txt",
+     "variables": 19,
+     "tokens": 854
+    }
+   ]
+  },
+  {
+   "kind": "table",
+   "title": "Release cycle09, table repwgt",
+   "basis": "every variable in the table",
+   "full_records": [
+    "metadata/releases/cycle09/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete",
+   "filter": {
+    "release": "cycle09",
+    "table": "repwgt"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 82,
+   "rule_versions": {},
+   "notes": [],
+   "count": 82,
+   "files": [
+    {
+     "path": "shards/table/cycle09-repwgt.jsonl",
+     "form": "jsonl",
+     "variables": 82,
+     "tokens": 7053
+    },
+    {
+     "path": "shards/table/cycle09-repwgt.txt",
+     "form": "txt",
+     "variables": 82,
+     "tokens": 1588
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week01.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week01.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week01-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week01-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week02.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week02.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week02-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week02-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week03.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week03.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week03-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week03-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week04.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week04.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week04-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week04-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week05.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week05.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week05-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week05-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week06.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week06.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week06-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week06-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week07.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week07.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week07-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week07-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week08.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week08.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week08-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week08-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week09.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week09.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week09-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week09-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week10.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week10.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week10-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week10-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week11.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week11.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week11-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week11-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week12.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week12.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week12-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week12-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week13.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week13.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week13-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week13-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week14.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week14.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week14-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week14-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week15.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week15.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week15-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week15-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week16.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week16.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week16-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week16-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week17.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week17.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week17-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week17-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week18.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week18.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week18-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week18-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week19.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week19.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week19-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week19-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week20.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week20.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week20-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week20-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week21.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week21.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week21-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week21-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week22.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week22.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week22-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week22-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week23.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week23.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week23-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week23-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week24.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week24.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week24-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week24-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week25.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week25.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week25-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week25-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week26.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week26.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week26-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week26-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week27.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week27.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week27-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week27-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week28.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week28.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week28-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week28-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week29.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week29.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week29-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week29-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week30.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week30.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week30-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week30-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week31.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week31.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week31-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week31-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week32.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week32.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week32-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week32-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week33.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week33.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week33-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week33-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week34.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week34.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week34-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week34-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week35.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week35.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week35-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week35-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week36.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week36.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week36-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week36-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week37.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week37.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week37-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week37-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week38.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week38.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week38-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week38-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week39.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week39.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week39-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week39-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week40.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week40.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week40-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week40-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week41.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week41.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week41-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week41-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week42.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week42.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week42-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week42-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week43.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week43.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week43-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week43-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week44.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week44.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week44-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week44-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week45.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week45.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week45-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week45-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week46.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week46.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week46-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week46-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week47.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week47.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week47-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week47-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week48.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week48.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week48-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week48-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week49.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week49.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week49-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week49-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week50.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week50.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week50-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week50-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week51.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week51.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week51-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week51-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week52.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week52.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week52-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week52-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week53.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week53.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week53-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week53-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week54.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week54.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week54-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week54-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week55.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week55.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week55-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week55-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week56.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week56.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week56-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week56-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week57.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week57.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week57-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week57-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week58.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week58.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week58-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week58-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week59.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week59.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week59-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week59-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week60.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week60.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week60-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week60-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week61.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week61.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week61-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week61-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week62.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week62.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week62-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week62-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group week63.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "week63.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/week63-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/week63-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 153
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group cycle01.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "cycle01.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/cycle01-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/cycle01-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 154
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group cycle02.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "cycle02.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/cycle02-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/cycle02-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 154
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group cycle03.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "cycle03.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/cycle03-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/cycle03-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 154
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group cycle04.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "cycle04.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/cycle04-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/cycle04-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 154
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group cycle05.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "cycle05.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/cycle05-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/cycle05-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 154
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group cycle06.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "cycle06.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/cycle06-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/cycle06-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 154
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group cycle07.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "cycle07.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/cycle07-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/cycle07-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 154
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group cycle08.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "cycle08.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 0,
+   "files": [
+    {
+     "path": "shards/group/cycle08-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 0,
+     "tokens": 133
+    },
+    {
+     "path": "shards/group/cycle08-replicate-weights.txt",
+     "form": "txt",
+     "variables": 0,
+     "tokens": 154
+    }
+   ]
+  },
+  {
+   "kind": "group",
+   "title": "other: Person replicate weights",
+   "basis": "members of group cycle09.replicate-weights (origin rule) in the current release (cycle09)",
+   "full_records": [
+    "metadata/releases/cycle09/repwgt/variables.jsonl"
+   ],
+   "completeness": "complete_by_rule",
+   "filter": {
+    "release": "cycle09",
+    "group": "cycle09.replicate-weights"
+   },
+   "releases": [
+    "cycle09"
+   ],
+   "n_in_scope": 101,
+   "rule_versions": {
+    "hps_replicate_series": "0.1"
+   },
+   "notes": [],
+   "count": 80,
+   "files": [
+    {
+     "path": "shards/group/cycle09-replicate-weights.jsonl",
+     "form": "jsonl",
+     "variables": 80,
+     "tokens": 6881
+    },
+    {
+     "path": "shards/group/cycle09-replicate-weights.txt",
+     "form": "txt",
+     "variables": 80,
+     "tokens": 1589
+    }
+   ]
+  }
+ ],
+ "across_releases": [
+  {
+   "path": "variables.part1.txt",
+   "variables": 914,
+   "tokens": 18564
+  },
+  {
+   "path": "variables.part2.txt",
+   "variables": 1095,
+   "tokens": 18035
+  },
+  {
+   "path": "variables.part3.txt",
+   "variables": 1095,
+   "tokens": 18035
+  },
+  {
+   "path": "variables.part4.txt",
+   "variables": 1085,
+   "tokens": 18059
+  },
+  {
+   "path": "variables.part5.txt",
+   "variables": 1096,
+   "tokens": 18044
+  },
+  {
+   "path": "variables.part6.txt",
+   "variables": 721,
+   "tokens": 11953
+  }
+ ]
+}

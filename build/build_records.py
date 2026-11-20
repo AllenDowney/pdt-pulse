@@ -62,11 +62,24 @@ def strip_note():
             "note": "The dictionary's text with Excel's escaped carriage returns (_x000D_) and line breaks removed."}
 
 
-def build_puf(release, wave, source, book, cfg, report):
+def build_puf(release, wave, source, book, cfg, report, columns):
     hand = {"origin": "hand", "author": cfg["author"], "date": cfg["date"]}
     records = []
     for name, facts in cfg["puf"].items():
         e = book.get(name)
+        if not e and name in columns:
+            # In the data but not in the dictionary (CYCLE in 2024's cycles 1-4).
+            kind = cfg["kinds"][facts["kind"]]
+            records.append({"dataset": DATASET, "release": release, "table": "puf", "name": name,
+                            "storage_type": "integer", "variable_type": kind["variable_type"],
+                            **({"measure": kind["measure"]} if kind.get("measure") else {}),
+                            "availability": [{"wave": wave}],
+                            "provenance": {"record": {"origin": "data_file", "source": source,
+                                                      "note": "A column of the PUF that the cycle's data dictionary "
+                                                              "doesn't list."},
+                                           "fields": {"variable_type": {**hand, "note": f"By kind ({facts['kind']})."}}}})
+            report.append(f"- {release}: `{name}` is in the data but not in the dictionary")
+            continue
         if not e:
             continue
         loc = f"{e['file']}, row {e['row']}"
@@ -94,6 +107,14 @@ def build_puf(release, wave, source, book, cfg, report):
                                                          f"rule {rule} {version}, from the label."}})
             else:
                 values.append({"code": code, "label": label, "kind": "valid"})
+        if columns.get(name) == "double" and facts["kind"] not in ("weight", "wave", "id"):
+            # A SAS file (week 55): SAS's own missing value, ".", where the CSV files have -88
+            # "Missing / Did not report"; the SAS dictionary lists no -88.
+            values.append({"code": ".", "kind": "missing", "missing_types": ["unspecified"],
+                           "origin": {"origin": "data_file", "source": source,
+                                      "note": "SAS's missing value in the SAS file. The SAS dictionary doesn't list "
+                                              "it, and gives no reason; the CSV files of other cycles have -88 "
+                                              "'Missing / Did not report' instead."}})
         if values:
             rec["values"] = values
             fields["values"] = {**pub, "note": strip_note()["note"]}
@@ -105,8 +126,8 @@ def build_puf(release, wave, source, book, cfg, report):
         elif ranges and valid:
             rec["valid_range"] = {"min": min(valid), "max": max(valid)}
             fields["valid_range"] = {**pub, "note": f"The dictionary's Range, {e['range']} ({ranges[0][1]})."}
-        rec["storage_type"] = ("string" if facts["kind"] == "id" else "float" if facts["kind"] == "weight"
-                               else "integer")
+        rec["storage_type"] = ("string" if facts["kind"] == "id" or columns.get(name) == "string"
+                               else "float" if facts["kind"] == "weight" else "integer")
         kind = cfg["kinds"][facts["kind"]]
         rec["variable_type"] = kind["variable_type"]
         fields["variable_type"] = {**hand, "note": f"By kind ({facts['kind']}) in build/slice.yaml."}
@@ -203,8 +224,11 @@ def main():
             report.append(f"- {release}: {path.name} is missing")
             continue
         book = hps.dictionary(path)
+        columns = hps.column_types(path, hps.zip_members(path)["puf"])
         wave = release
-        puf = build_puf(release, wave, src["id"], book, cfg, report)
+        puf = build_puf(release, wave, src["id"], book, cfg, report, columns)
+        if absent := [x["name"] for x in puf if x["name"] not in columns]:
+            report.append(f"- {release}: in the dictionary but not in the data: {', '.join(absent)}")
         rep = build_repwgt(release, wave, src["id"], book, cfg, {x["name"] for x in puf})
         jsonl(META / "releases" / release / "puf" / "variables.jsonl", puf)
         jsonl(META / "releases" / release / "repwgt" / "variables.jsonl", rep)

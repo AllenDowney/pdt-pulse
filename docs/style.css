@@ -1,0 +1,50 @@
+:root {
+  --bg: #ffffff; --fg: #1d1d1f; --muted: #5f6368; --line: #dadce0; --accent: #1a5fb4;
+  --head: #f3f4f6; --warn-bg: #fff4d6; --warn-fg: #7a4d00; --missing: #8a3b12;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17181a; --fg: #e8e8ea; --muted: #a0a4ab; --line: #3a3d42; --accent: #8ab4f8;
+    --head: #222428; --warn-bg: #3d2f0d; --warn-fg: #f5d68a; --missing: #f2a37b;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+nav, main, footer { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+nav { padding-top: 16px; color: var(--muted); font-size: 14px; }
+footer { padding: 32px 16px; color: var(--muted); font-size: 13px; }
+a { color: var(--accent); }
+h1 { font-size: 28px; margin: 12px 0 4px; word-break: break-word; }
+h2 { font-size: 20px; margin: 28px 0 8px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+h3 { font-size: 16px; margin: 16px 0 4px; }
+.label { font-size: 18px; color: var(--muted); margin-top: 0; }
+.text { white-space: pre-wrap; background: var(--head); padding: 8px 12px; border-radius: 6px; }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; }
+dt { color: var(--muted); }
+dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: var(--head); position: sticky; top: 0; }
+table.numeric td + td, table.numeric th + th { text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 600px) {
+  dl { grid-template-columns: 1fr; gap: 0; }
+  dt { margin-top: 8px; }
+}
+code { font-size: 90%; }
+.origin { color: var(--muted); font-size: 13px; }
+.gap { white-space: nowrap; }
+.num { font-variant-numeric: tabular-nums; }
+ul.diff { margin: 0; padding-left: 18px; }
+blockquote { margin: 4px 0 8px; padding: 4px 10px; border-left: 3px solid var(--line);
+  color: var(--muted); white-space: pre-wrap; }
+.corrected { background: var(--warn-bg); color: var(--warn-fg); font-size: 12px; padding: 1px 6px;
+  border-radius: 4px; }
+.kind-missing { color: var(--missing); }
+.kind-unresolved { color: var(--warn-fg); background: var(--warn-bg); padding: 0 4px; }
+.correction { border-left: 3px solid var(--warn-fg); padding-left: 12px; margin: 12px 0; }
+input[type=search] { width: 100%; font-size: 16px; padding: 8px 10px; border: 1px solid var(--line);
+  border-radius: 6px; background: var(--bg); color: var(--fg); }
+#hits { padding-left: 20px; }
+pre { overflow-x: auto; background: var(--head); padding: 8px; }

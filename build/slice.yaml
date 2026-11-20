@@ -1,0 +1,9 @@
+# The variables to build, and facts the sources don't give (origin: hand).
+# Edited by hand; read by build/build_records.py.
+release: "week01"
+# Start with 30-50 variables that include the hard cases: a battery, an item
+# asked on only some forms, several wordings, several kinds of missing codes,
+# and anything the publisher has corrected (instructions/03-parse-documentation.md).
+variables: {}
+#  name:
+#    measure: categorical   # categorical, ordinal, continuous, count, identifier, weight, text, date

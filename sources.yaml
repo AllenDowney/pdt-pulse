@@ -1,0 +1,17 @@
+# Every file this repo depends on (STANDARD.md §2.2): data files, codebooks,
+# questionnaires, release notes, errata and terms pages, upstream packages.
+# Schema: PublicDataToolkit/schema/sources.schema.json. Edited by hand.
+#
+# Once a file is fetched, fill fetched_on, bytes and sha256 (pdt check C6).
+# An upstream package also needs `version` (a tag or commit), and documentation
+# says which releases it `documents`.
+sources:
+  - id: hps-week01
+    title: "Household Pulse Survey, Week 1 (April 23 - May 5, 2020) public use file, data"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk1/HPS_Week01_PUF_CSV.zip"
+    path: data/raw/CHANGE-ME
+    releases: ["week01"]
+    redistribution: unknown
+    acquisition: automated

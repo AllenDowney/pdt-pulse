@@ -1,0 +1,23 @@
+# Changes here will be overwritten by Copier; do not edit by hand.
+_commit: v0.1.0
+_src_path: /home/downey/PublicDataToolkit
+citation: ''
+dataset_id: pulse
+dataset_url: https://www.census.gov/programs-surveys/household-pulse-survey.html
+description: The Census Bureau's online survey of US adults on how the COVID-19 pandemic
+    and later events affected households, run every one to two weeks from April 2020
+    to September 2024, with the questionnaire revised by phase.
+form_label: ''
+publisher_name: U.S. Census Bureau
+publisher_url: https://www.census.gov/
+release_id: week01
+release_label: Household Pulse Survey, Week 1 (April 23 - May 5, 2020) public use
+    file
+source_format: csv
+source_id: hps-week01
+source_kind: data
+source_url: https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk1/HPS_Week01_PUF_CSV.zip
+standard_version: '0.1'
+terms_url: https://www.census.gov/about/policies/open-gov.html
+title: Household Pulse Survey (HPS)
+wave_label: week

@@ -1,0 +1,31 @@
+# The dataset, its terms and its releases (STANDARD.md §2.1, §8).
+# Schema: PublicDataToolkit/schema/dataset.schema.json. Edited by hand.
+standard_version: "0.1"
+id: pulse
+title: "Household Pulse Survey (HPS)"
+publisher:
+  name: "U.S. Census Bureau"
+  url: "https://www.census.gov/"
+url: "https://www.census.gov/programs-surveys/household-pulse-survey.html"
+description: "The Census Bureau\u0027s online survey of US adults on how the COVID-19 pandemic and later events affected households, run every one to two weeks from April 2020 to September 2024, with the questionnaire revised by phase."
+# Terms are decided by a person, never by an agent or this template (STANDARD.md §8).
+# Quote what the terms pages say in `summary`, then have a person set each field
+# to ship or build-only and fill reviewed_by and reviewed_on. `unknown` blocks
+# shipping anything that depends on it.
+terms:
+  url: "https://www.census.gov/about/policies/open-gov.html"
+  summary: Not yet reviewed.
+  data: unknown
+  documentation: unknown
+  metadata: unknown
+  llm_processing: unknown
+dimensions:
+  wave:
+    label: "week"
+releases:
+  - id: "week01"
+    label: "Household Pulse Survey, Week 1 (April 23 - May 5, 2020) public use file"
+    status: current
+    sources: [hps-week01]
+    # A release with several data files lists `tables`, each with an id, label,
+    # sources, key and references (STANDARD.md §2.1). Examples: pdt-nsfg, pdt-fars.

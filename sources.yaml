@@ -5,13 +5,924 @@
 # Once a file is fetched, fill fetched_on, bytes and sha256 (pdt check C6).
 # An upstream package also needs `version` (a tag or commit), and documentation
 # says which releases it `documents`.
+#
+# Written once from Census's directory listings; www2.census.gov serves them to urllib.
 sources:
   - id: hps-week01
-    title: "Household Pulse Survey, Week 1 (April 23 - May 5, 2020) public use file, data"
+    title: "Household Pulse Survey, Phase 1, Week 1: PUF, replicate weights and data dictionary (CSV zip)"
     kind: data
     format: csv
     url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk1/HPS_Week01_PUF_CSV.zip"
-    path: data/raw/CHANGE-ME
+    path: data/raw/HPS_Week01_PUF_CSV.zip
+    releases: ["week01"]
+    documents: ["week01"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week02
+    title: "Household Pulse Survey, Phase 1, Week 2: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk2/HPS_Week02_PUF_CSV.zip"
+    path: data/raw/HPS_Week02_PUF_CSV.zip
+    releases: ["week02"]
+    documents: ["week02"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week03
+    title: "Household Pulse Survey, Phase 1, Week 3: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk3/HPS_Week03_PUF_CSV.zip"
+    path: data/raw/HPS_Week03_PUF_CSV.zip
+    releases: ["week03"]
+    documents: ["week03"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week04
+    title: "Household Pulse Survey, Phase 1, Week 4: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk4/HPS_Week04_PUF_CSV.zip"
+    path: data/raw/HPS_Week04_PUF_CSV.zip
+    releases: ["week04"]
+    documents: ["week04"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week05
+    title: "Household Pulse Survey, Phase 1, Week 5: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk5/HPS_Week05_PUF_CSV.zip"
+    path: data/raw/HPS_Week05_PUF_CSV.zip
+    releases: ["week05"]
+    documents: ["week05"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week06
+    title: "Household Pulse Survey, Phase 1, Week 6: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk6/HPS_Week06_PUF_CSV.zip"
+    path: data/raw/HPS_Week06_PUF_CSV.zip
+    releases: ["week06"]
+    documents: ["week06"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week07
+    title: "Household Pulse Survey, Phase 1, Week 7: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk7/HPS_Week07_PUF_CSV.zip"
+    path: data/raw/HPS_Week07_PUF_CSV.zip
+    releases: ["week07"]
+    documents: ["week07"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week08
+    title: "Household Pulse Survey, Phase 1, Week 8: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk8/HPS_Week08_PUF_CSV.zip"
+    path: data/raw/HPS_Week08_PUF_CSV.zip
+    releases: ["week08"]
+    documents: ["week08"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week09
+    title: "Household Pulse Survey, Phase 1, Week 9: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk9/HPS_Week09_PUF_CSV.zip"
+    path: data/raw/HPS_Week09_PUF_CSV.zip
+    releases: ["week09"]
+    documents: ["week09"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week10
+    title: "Household Pulse Survey, Phase 1, Week 10: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk10/HPS_Week10_PUF_CSV.zip"
+    path: data/raw/HPS_Week10_PUF_CSV.zip
+    releases: ["week10"]
+    documents: ["week10"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week11
+    title: "Household Pulse Survey, Phase 1, Week 11: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk11/HPS_Week11_PUF_CSV.zip"
+    path: data/raw/HPS_Week11_PUF_CSV.zip
+    releases: ["week11"]
+    documents: ["week11"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week12
+    title: "Household Pulse Survey, Phase 1, Week 12: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk12/HPS_Week12_PUF_CSV.zip"
+    path: data/raw/HPS_Week12_PUF_CSV.zip
+    releases: ["week12"]
+    documents: ["week12"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week13
+    title: "Household Pulse Survey, Phase 2, Week 13: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk13/HPS_Week13_PUF_CSV.zip"
+    path: data/raw/HPS_Week13_PUF_CSV.zip
+    releases: ["week13"]
+    documents: ["week13"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week14
+    title: "Household Pulse Survey, Phase 2, Week 14: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk14/HPS_Week14_PUF_CSV.zip"
+    path: data/raw/HPS_Week14_PUF_CSV.zip
+    releases: ["week14"]
+    documents: ["week14"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week15
+    title: "Household Pulse Survey, Phase 2, Week 15: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk15/HPS_Week15_PUF_CSV.zip"
+    path: data/raw/HPS_Week15_PUF_CSV.zip
+    releases: ["week15"]
+    documents: ["week15"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week16
+    title: "Household Pulse Survey, Phase 2, Week 16: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk16/HPS_Week16_PUF_CSV.zip"
+    path: data/raw/HPS_Week16_PUF_CSV.zip
+    releases: ["week16"]
+    documents: ["week16"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week17
+    title: "Household Pulse Survey, Phase 2, Week 17: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk17/HPS_Week17_PUF_CSV.zip"
+    path: data/raw/HPS_Week17_PUF_CSV.zip
+    releases: ["week17"]
+    documents: ["week17"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week18
+    title: "Household Pulse Survey, Phase 3, Week 18: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk18/HPS_Week18_PUF_CSV.zip"
+    path: data/raw/HPS_Week18_PUF_CSV.zip
+    releases: ["week18"]
+    documents: ["week18"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week19
+    title: "Household Pulse Survey, Phase 3, Week 19: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk19/HPS_Week19_PUF_CSV.zip"
+    path: data/raw/HPS_Week19_PUF_CSV.zip
+    releases: ["week19"]
+    documents: ["week19"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week20
+    title: "Household Pulse Survey, Phase 3, Week 20: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk20/HPS_Week20_PUF_CSV.zip"
+    path: data/raw/HPS_Week20_PUF_CSV.zip
+    releases: ["week20"]
+    documents: ["week20"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week21
+    title: "Household Pulse Survey, Phase 3, Week 21: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk21/HPS_Week21_PUF_CSV.zip"
+    path: data/raw/HPS_Week21_PUF_CSV.zip
+    releases: ["week21"]
+    documents: ["week21"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week22
+    title: "Household Pulse Survey, Phase 3, Week 22: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk22/HPS_Week22_PUF_CSV.zip"
+    path: data/raw/HPS_Week22_PUF_CSV.zip
+    releases: ["week22"]
+    documents: ["week22"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week23
+    title: "Household Pulse Survey, Phase 3, Week 23: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk23/HPS_Week23_PUF_CSV.zip"
+    path: data/raw/HPS_Week23_PUF_CSV.zip
+    releases: ["week23"]
+    documents: ["week23"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week24
+    title: "Household Pulse Survey, Phase 3, Week 24: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk24/HPS_Week24_PUF_CSV.zip"
+    path: data/raw/HPS_Week24_PUF_CSV.zip
+    releases: ["week24"]
+    documents: ["week24"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week25
+    title: "Household Pulse Survey, Phase 3, Week 25: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk25/HPS_Week25_PUF_CSV.zip"
+    path: data/raw/HPS_Week25_PUF_CSV.zip
+    releases: ["week25"]
+    documents: ["week25"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week26
+    title: "Household Pulse Survey, Phase 3, Week 26: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk26/HPS_Week26_PUF_CSV.zip"
+    path: data/raw/HPS_Week26_PUF_CSV.zip
+    releases: ["week26"]
+    documents: ["week26"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week27
+    title: "Household Pulse Survey, Phase 3, Week 27: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk27/HPS_Week27_PUF_CSV.zip"
+    path: data/raw/HPS_Week27_PUF_CSV.zip
+    releases: ["week27"]
+    documents: ["week27"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week28
+    title: "Household Pulse Survey, Phase 3.1, Week 28: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk28/HPS_Week28_PUF_CSV.zip"
+    path: data/raw/HPS_Week28_PUF_CSV.zip
+    releases: ["week28"]
+    documents: ["week28"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week29
+    title: "Household Pulse Survey, Phase 3.1, Week 29: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk29/HPS_Week29_PUF_CSV.zip"
+    path: data/raw/HPS_Week29_PUF_CSV.zip
+    releases: ["week29"]
+    documents: ["week29"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week30
+    title: "Household Pulse Survey, Phase 3.1, Week 30: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk30/HPS_Week30_PUF_CSV.zip"
+    path: data/raw/HPS_Week30_PUF_CSV.zip
+    releases: ["week30"]
+    documents: ["week30"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week31
+    title: "Household Pulse Survey, Phase 3.1, Week 31: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk31/HPS_Week31_PUF_CSV.zip"
+    path: data/raw/HPS_Week31_PUF_CSV.zip
+    releases: ["week31"]
+    documents: ["week31"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week32
+    title: "Household Pulse Survey, Phase 3.1, Week 32: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk32/HPS_Week32_PUF_CSV.zip"
+    path: data/raw/HPS_Week32_PUF_CSV.zip
+    releases: ["week32"]
+    documents: ["week32"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week33
+    title: "Household Pulse Survey, Phase 3.1, Week 33: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk33/HPS_Week33_PUF_CSV.zip"
+    path: data/raw/HPS_Week33_PUF_CSV.zip
+    releases: ["week33"]
+    documents: ["week33"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week34
+    title: "Household Pulse Survey, Phase 3.2, Week 34: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk34/HPS_Week34_PUF_CSV.zip"
+    path: data/raw/HPS_Week34_PUF_CSV.zip
+    releases: ["week34"]
+    documents: ["week34"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week35
+    title: "Household Pulse Survey, Phase 3.2, Week 35: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk35/HPS_Week35_PUF_CSV.zip"
+    path: data/raw/HPS_Week35_PUF_CSV.zip
+    releases: ["week35"]
+    documents: ["week35"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week36
+    title: "Household Pulse Survey, Phase 3.2, Week 36: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk36/HPS_Week36_PUF_CSV.zip"
+    path: data/raw/HPS_Week36_PUF_CSV.zip
+    releases: ["week36"]
+    documents: ["week36"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week37
+    title: "Household Pulse Survey, Phase 3.2, Week 37: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk37/HPS_Week37_PUF_CSV.zip"
+    path: data/raw/HPS_Week37_PUF_CSV.zip
+    releases: ["week37"]
+    documents: ["week37"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week38
+    title: "Household Pulse Survey, Phase 3.2, Week 38: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk38/HPS_Week38_PUF_CSV.zip"
+    path: data/raw/HPS_Week38_PUF_CSV.zip
+    releases: ["week38"]
+    documents: ["week38"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week39
+    title: "Household Pulse Survey, Phase 3.2, Week 39: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk39/HPS_Week39_PUF_CSV.zip"
+    path: data/raw/HPS_Week39_PUF_CSV.zip
+    releases: ["week39"]
+    documents: ["week39"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week40
+    title: "Household Pulse Survey, Phase 3.3, Week 40: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2021/wk40/HPS_Week40_PUF_CSV.zip"
+    path: data/raw/HPS_Week40_PUF_CSV.zip
+    releases: ["week40"]
+    documents: ["week40"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week41
+    title: "Household Pulse Survey, Phase 3.3, Week 41: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk41/HPS_Week41_PUF_CSV.zip"
+    path: data/raw/HPS_Week41_PUF_CSV.zip
+    releases: ["week41"]
+    documents: ["week41"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week42
+    title: "Household Pulse Survey, Phase 3.3, Week 42: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk42/HPS_Week42_PUF_CSV.zip"
+    path: data/raw/HPS_Week42_PUF_CSV.zip
+    releases: ["week42"]
+    documents: ["week42"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week43
+    title: "Household Pulse Survey, Phase 3.4, Week 43: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk43/HPS_Week43_PUF_CSV.zip"
+    path: data/raw/HPS_Week43_PUF_CSV.zip
+    releases: ["week43"]
+    documents: ["week43"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week44
+    title: "Household Pulse Survey, Phase 3.4, Week 44: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk44/HPS_Week44_PUF_CSV.zip"
+    path: data/raw/HPS_Week44_PUF_CSV.zip
+    releases: ["week44"]
+    documents: ["week44"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week45
+    title: "Household Pulse Survey, Phase 3.4, Week 45: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk45/HPS_Week45_PUF_CSV.zip"
+    path: data/raw/HPS_Week45_PUF_CSV.zip
+    releases: ["week45"]
+    documents: ["week45"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week46
+    title: "Household Pulse Survey, Phase 3.5, Week 46: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk46/HPS_Week46_PUF_CSV.zip"
+    path: data/raw/HPS_Week46_PUF_CSV.zip
+    releases: ["week46"]
+    documents: ["week46"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week47
+    title: "Household Pulse Survey, Phase 3.5, Week 47: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk47/HPS_Week47_PUF_CSV.zip"
+    path: data/raw/HPS_Week47_PUF_CSV.zip
+    releases: ["week47"]
+    documents: ["week47"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week48
+    title: "Household Pulse Survey, Phase 3.5, Week 48: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk48/HPS_Week48_PUF_CSV.zip"
+    path: data/raw/HPS_Week48_PUF_CSV.zip
+    releases: ["week48"]
+    documents: ["week48"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week49
+    title: "Household Pulse Survey, Phase 3.6, Week 49: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk49/HPS_Week49_PUF_CSV.zip"
+    path: data/raw/HPS_Week49_PUF_CSV.zip
+    releases: ["week49"]
+    documents: ["week49"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week50
+    title: "Household Pulse Survey, Phase 3.6, Week 50: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk50/HPS_Week50_PUF_CSV.zip"
+    path: data/raw/HPS_Week50_PUF_CSV.zip
+    releases: ["week50"]
+    documents: ["week50"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week51
+    title: "Household Pulse Survey, Phase 3.6, Week 51: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2022/wk51/HPS_Week51_PUF_CSV.zip"
+    path: data/raw/HPS_Week51_PUF_CSV.zip
+    releases: ["week51"]
+    documents: ["week51"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week52
+    title: "Household Pulse Survey, Phase 3.7, Week 52: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk52/HPS_Week52_PUF_CSV.zip"
+    path: data/raw/HPS_Week52_PUF_CSV.zip
+    releases: ["week52"]
+    documents: ["week52"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week53
+    title: "Household Pulse Survey, Phase 3.7, Week 53: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk53/HPS_Week53_PUF_CSV.zip"
+    path: data/raw/HPS_Week53_PUF_CSV.zip
+    releases: ["week53"]
+    documents: ["week53"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week54
+    title: "Household Pulse Survey, Phase 3.7, Week 54: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk54/HPS_Week54_PUF_CSV.zip"
+    path: data/raw/HPS_Week54_PUF_CSV.zip
+    releases: ["week54"]
+    documents: ["week54"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week55
+    title: "Household Pulse Survey, Phase 3.8, Week 55: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk55/HPS_Week55_PUF_CSV.zip"
+    path: data/raw/HPS_Week55_PUF_CSV.zip
+    releases: ["week55"]
+    documents: ["week55"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week56
+    title: "Household Pulse Survey, Phase 3.8, Week 56: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk56/HPS_Week56_PUF_CSV.zip"
+    path: data/raw/HPS_Week56_PUF_CSV.zip
+    releases: ["week56"]
+    documents: ["week56"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week57
+    title: "Household Pulse Survey, Phase 3.8, Week 57: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk57/HPS_Week57_PUF_CSV.zip"
+    path: data/raw/HPS_Week57_PUF_CSV.zip
+    releases: ["week57"]
+    documents: ["week57"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week58
+    title: "Household Pulse Survey, Phase 3.9, Week 58: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk58/HPS_Week58_PUF_CSV.zip"
+    path: data/raw/HPS_Week58_PUF_CSV.zip
+    releases: ["week58"]
+    documents: ["week58"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week59
+    title: "Household Pulse Survey, Phase 3.9, Week 59: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk59/HPS_Week59_PUF_CSV.zip"
+    path: data/raw/HPS_Week59_PUF_CSV.zip
+    releases: ["week59"]
+    documents: ["week59"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week60
+    title: "Household Pulse Survey, Phase 3.9, Week 60: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk60/HPS_Week60_PUF_CSV.zip"
+    path: data/raw/HPS_Week60_PUF_CSV.zip
+    releases: ["week60"]
+    documents: ["week60"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week61
+    title: "Household Pulse Survey, Phase 3.10, Week 61: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk61/HPS_Week61_PUF_CSV.zip"
+    path: data/raw/HPS_Week61_PUF_CSV.zip
+    releases: ["week61"]
+    documents: ["week61"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week62
+    title: "Household Pulse Survey, Phase 3.10, Week 62: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk62/HPS_Week62_PUF_CSV.zip"
+    path: data/raw/HPS_Week62_PUF_CSV.zip
+    releases: ["week62"]
+    documents: ["week62"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-week63
+    title: "Household Pulse Survey, Phase 3.10, Week 63: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2023/wk63/HPS_Week63_PUF_CSV.zip"
+    path: data/raw/HPS_Week63_PUF_CSV.zip
+    releases: ["week63"]
+    documents: ["week63"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-cycle01
+    title: "Household Pulse Survey, Phase 4.0, Cycle 01: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2024/cycle01/HPS_Phase4Cycle01_PUF_CSV.zip"
+    path: data/raw/HPS_Phase4Cycle01_PUF_CSV.zip
+    releases: ["cycle01"]
+    documents: ["cycle01"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-cycle02
+    title: "Household Pulse Survey, Phase 4.0, Cycle 02: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2024/cycle02/HPS_Phase4Cycle02_PUF_CSV.zip"
+    path: data/raw/HPS_Phase4Cycle02_PUF_CSV.zip
+    releases: ["cycle02"]
+    documents: ["cycle02"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-cycle03
+    title: "Household Pulse Survey, Phase 4.0, Cycle 03: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2024/cycle03/HPS_Phase4Cycle03_PUF_CSV.zip"
+    path: data/raw/HPS_Phase4Cycle03_PUF_CSV.zip
+    releases: ["cycle03"]
+    documents: ["cycle03"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-cycle04
+    title: "Household Pulse Survey, Phase 4.1, Cycle 04: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2024/cycle04/HPS_Phase4-1Cycle04_PUF_CSV.zip"
+    path: data/raw/HPS_Phase4-1Cycle04_PUF_CSV.zip
+    releases: ["cycle04"]
+    documents: ["cycle04"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-cycle05
+    title: "Household Pulse Survey, Phase 4.1, Cycle 05: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2024/cycle05/HPS_Phase4-1Cycle05_PUF_CSV.zip"
+    path: data/raw/HPS_Phase4-1Cycle05_PUF_CSV.zip
+    releases: ["cycle05"]
+    documents: ["cycle05"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-cycle06
+    title: "Household Pulse Survey, Phase 4.1, Cycle 06: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2024/cycle06/HPS_Phase4-1Cycle06_PUF_CSV.zip"
+    path: data/raw/HPS_Phase4-1Cycle06_PUF_CSV.zip
+    releases: ["cycle06"]
+    documents: ["cycle06"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-cycle07
+    title: "Household Pulse Survey, Phase 4.1, Cycle 07: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2024/cycle07/HPS_Phase4-1Cycle07_PUF_CSV.zip"
+    path: data/raw/HPS_Phase4-1Cycle07_PUF_CSV.zip
+    releases: ["cycle07"]
+    documents: ["cycle07"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-cycle08
+    title: "Household Pulse Survey, Phase 4.2, Cycle 08: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2024/cycle08/HPS_Phase4-2Cycle08_PUF_CSV.zip"
+    path: data/raw/HPS_Phase4-2Cycle08_PUF_CSV.zip
+    releases: ["cycle08"]
+    documents: ["cycle08"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-cycle09
+    title: "Household Pulse Survey, Phase 4.2, Cycle 09: PUF, replicate weights and data dictionary (CSV zip)"
+    kind: data
+    format: csv
+    url: "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2024/cycle09/HPS_Phase4-2Cycle09_PUF_CSV.zip"
+    path: data/raw/HPS_Phase4-2Cycle09_PUF_CSV.zip
+    releases: ["cycle09"]
+    documents: ["cycle09"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase1
+    title: "Household Pulse Survey, Phase 1 user notes (2020-Household-Pulse-Survey-User-Notes)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/2020-Household-Pulse-Survey-User-Notes.pdf"
+    path: data/raw/2020-Household-Pulse-Survey-User-Notes.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week01", "week02", "week03", "week04", "week05", "week06", "week07", "week08", "week09", "week10", "week11", "week12"]
+    documents: ["week01", "week02", "week03", "week04", "week05", "week06", "week07", "week08", "week09", "week10", "week11", "week12"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase2
+    title: "Household Pulse Survey, Phase 2 user notes (Phase2_2020_Household_Pulse_Survey_User_Notes_09_08_2020)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase2_2020_Household_Pulse_Survey_User_Notes_09_08_2020.pdf"
+    path: data/raw/Phase2_2020_Household_Pulse_Survey_User_Notes_09_08_2020.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week13", "week14", "week15", "week16", "week17"]
+    documents: ["week13", "week14", "week15", "week16", "week17"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3
+    title: "Household Pulse Survey, Phase 3 user notes (Phase3_2020_Household_Pulse_Survey_User_Notes_111820)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3_2020_Household_Pulse_Survey_User_Notes_111820.pdf"
+    path: data/raw/Phase3_2020_Household_Pulse_Survey_User_Notes_111820.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week18", "week19", "week20", "week21", "week22", "week23", "week24", "week25", "week26", "week27"]
+    documents: ["week18", "week19", "week20", "week21", "week22", "week23", "week24", "week25", "week26", "week27"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3-1
+    title: "Household Pulse Survey, Phase 3.1 user notes (Phase3-1_2021_Household_Pulse_Survey_User_Notes_050521)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3-1_2021_Household_Pulse_Survey_User_Notes_050521.pdf"
+    path: data/raw/Phase3-1_2021_Household_Pulse_Survey_User_Notes_050521.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week28", "week29", "week30", "week31", "week32", "week33"]
+    documents: ["week28", "week29", "week30", "week31", "week32", "week33"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3-2
+    title: "Household Pulse Survey, Phase 3.2 user notes (Phase3-2_2021_Household_Pulse_Survey_User_Notes_081121)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3-2_2021_Household_Pulse_Survey_User_Notes_081121.pdf"
+    path: data/raw/Phase3-2_2021_Household_Pulse_Survey_User_Notes_081121.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week34", "week35", "week36", "week37", "week38", "week39"]
+    documents: ["week34", "week35", "week36", "week37", "week38", "week39"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3-3
+    title: "Household Pulse Survey, Phase 3.3 user notes (Phase3-3_2021_Household_Pulse_Survey_User_Notes_12222021)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3-3_2021_Household_Pulse_Survey_User_Notes_12222021.pdf"
+    path: data/raw/Phase3-3_2021_Household_Pulse_Survey_User_Notes_12222021.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week40", "week41", "week42"]
+    documents: ["week40", "week41", "week42"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3-4
+    title: "Household Pulse Survey, Phase 3.4 user notes (Phase3-4_2022_Household_Pulse_Survey_User_Notes_03232022)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3-4_2022_Household_Pulse_Survey_User_Notes_03232022.pdf"
+    path: data/raw/Phase3-4_2022_Household_Pulse_Survey_User_Notes_03232022.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week43", "week44", "week45"]
+    documents: ["week43", "week44", "week45"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3-5
+    title: "Household Pulse Survey, Phase 3.5 user notes (Phase3-5_2022_Household_Pulse_Survey_User_Notes_06222022)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3-5_2022_Household_Pulse_Survey_User_Notes_06222022.pdf"
+    path: data/raw/Phase3-5_2022_Household_Pulse_Survey_User_Notes_06222022.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week46", "week47", "week48"]
+    documents: ["week46", "week47", "week48"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3-6
+    title: "Household Pulse Survey, Phase 3.6 user notes (Phase3-6_2022_Household_Pulse_Survey_User_Notes_10052022)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3-6_2022_Household_Pulse_Survey_User_Notes_10052022.pdf"
+    path: data/raw/Phase3-6_2022_Household_Pulse_Survey_User_Notes_10052022.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week49", "week50", "week51"]
+    documents: ["week49", "week50", "week51"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3-7
+    title: "Household Pulse Survey, Phase 3.7 user notes (Phase3-7_2022_Household_Pulse_Survey_User_Notes_01052023)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3-7_2022_Household_Pulse_Survey_User_Notes_01052023.pdf"
+    path: data/raw/Phase3-7_2022_Household_Pulse_Survey_User_Notes_01052023.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week52", "week53", "week54"]
+    documents: ["week52", "week53", "week54"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3-8
+    title: "Household Pulse Survey, Phase 3.8 user notes (Phase3-8_2023_Household_Pulse_Survey_User_Notes_03222023)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3-8_2023_Household_Pulse_Survey_User_Notes_03222023.pdf"
+    path: data/raw/Phase3-8_2023_Household_Pulse_Survey_User_Notes_03222023.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week55", "week56", "week57"]
+    documents: ["week55", "week56", "week57"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3-9
+    title: "Household Pulse Survey, Phase 3.9 user notes (Phase3-9_2023_Household_Pulse_Survey_User_Notes_06282023)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3-9_2023_Household_Pulse_Survey_User_Notes_06282023.pdf"
+    path: data/raw/Phase3-9_2023_Household_Pulse_Survey_User_Notes_06282023.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week58", "week59", "week60"]
+    documents: ["week58", "week59", "week60"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase3-10
+    title: "Household Pulse Survey, Phase 3.10 user notes (Phase3-10_2023_Household_Pulse_Survey_User_Notes_09202023)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase3-10_2023_Household_Pulse_Survey_User_Notes_09202023.pdf"
+    path: data/raw/Phase3-10_2023_Household_Pulse_Survey_User_Notes_09202023.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["week61", "week62", "week63"]
+    documents: ["week61", "week62", "week63"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase4-0
+    title: "Household Pulse Survey, Phase 4.0 user notes (Phase4-0_2024_Household_Pulse_Survey_User_Notes_03252026)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase4-0_2024_Household_Pulse_Survey_User_Notes_03252026.pdf"
+    path: data/raw/Phase4-0_2024_Household_Pulse_Survey_User_Notes_03252026.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["cycle01", "cycle02", "cycle03"]
+    documents: ["cycle01", "cycle02", "cycle03"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase4-1
+    title: "Household Pulse Survey, Phase 4.1 user notes (Phase4-1_2024_Household_Pulse_Survey_User_Notes_05162024)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase4-1_2024_Household_Pulse_Survey_User_Notes_05162024.pdf"
+    path: data/raw/Phase4-1_2024_Household_Pulse_Survey_User_Notes_05162024.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["cycle04", "cycle05", "cycle06", "cycle07"]
+    documents: ["cycle04", "cycle05", "cycle06", "cycle07"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-user-notes-phase4-2
+    title: "Household Pulse Survey, Phase 4.2 user notes (Phase4-2_2024_Household_Pulse_Survey_User_Notes_09122024)"
+    kind: release_notes
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase4-2_2024_Household_Pulse_Survey_User_Notes_09122024.pdf"
+    path: data/raw/Phase4-2_2024_Household_Pulse_Survey_User_Notes_09122024.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["cycle08", "cycle09"]
+    documents: ["cycle08", "cycle09"]
+    redistribution: unknown
+    acquisition: automated
+  - id: hps-sa-week01
+    title: "Household Pulse Survey, Source and Accuracy Statement, Weeks 1 and 2"
+    kind: other
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Source-and-Accuracy-Statement-April-23-May-5-and-May-7-May12.pdf"
+    path: data/raw/Source-and-Accuracy-Statement-April-23-May-5-and-May-7-May12.txt
+    convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week01"]
     redistribution: unknown
     acquisition: automated
+    note: The variance method (80 replicate weights, successive difference replication) for `design.replicates`.
+  - id: hps-sa-cycle09
+    title: "Household Pulse Survey, Source and Accuracy Statement, Phase 4.2, cycle 09"
+    kind: other
+    format: text
+    url: "https://www2.census.gov/programs-surveys/demo/technical-documentation/hhp/Phase4-2_Source_and_Accuracy_Cycle09.pdf"
+    path: data/raw/Phase4-2_Source_and_Accuracy_Cycle09.txt
+    convert: "pdftotext -layout (poppler 24.02)"
+    releases: ["cycle09"]
+    redistribution: unknown
+    acquisition: automated
+    note: The variance method (80 replicate weights, successive difference replication) for `design.replicates`.

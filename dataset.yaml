@@ -1,31 +1,1130 @@
 # The dataset, its terms and its releases (STANDARD.md §2.1, §8).
-# Schema: PublicDataToolkit/schema/dataset.schema.json. Edited by hand.
+# Schema: PublicDataToolkit/schema/dataset.schema.json. Edited by hand; the releases list
+# was written once from Census's directory listings.
 standard_version: "0.1"
 id: pulse
+kind: survey
 title: "Household Pulse Survey (HPS)"
 publisher:
   name: "U.S. Census Bureau"
   url: "https://www.census.gov/"
 url: "https://www.census.gov/programs-surveys/household-pulse-survey.html"
-description: "The Census Bureau\u0027s online survey of US adults on how the COVID-19 pandemic and later events affected households, run every one to two weeks from April 2020 to September 2024, with the questionnaire revised by phase."
+description: >-
+  The Census Bureau's online survey of US adults on how the COVID-19 pandemic and later
+  events affected households, every one or two weeks from April 2020 (weeks 1-63, 2020-2023)
+  and in two-week cycles in 2024 (cycles 1-9). The questionnaire was revised by phase (1, 2,
+  3, 3.1-3.10, 4.0-4.2). Each week or cycle is its own public use file, and its own release here.
 # Terms are decided by a person, never by an agent or this template (STANDARD.md §8).
-# Quote what the terms pages say in `summary`, then have a person set each field
-# to ship or build-only and fill reviewed_by and reviewed_on. `unknown` blocks
-# shipping anything that depends on it.
 terms:
   url: "https://www.census.gov/about/policies/open-gov.html"
-  summary: Not yet reviewed.
+  summary: >-
+    Not yet decided. The Census Bureau's Open Government page: "The U.S. Census Bureau publishes
+    its data as open data, meaning it is freely available for use and re-use by the public."
+    The PUFs and their documentation are works of a US federal agency. The Census Data API's
+    terms of service (https://www.census.gov/data/developers/about/terms-of-service.html) ask
+    API products to say they are "not endorsed or certified by the Census Bureau"; this repo
+    doesn't use the API.
   data: unknown
   documentation: unknown
   metadata: unknown
   llm_processing: unknown
+design:
+  weights: [PWEIGHT]
+  replicates:
+    prefix: PWEIGHT
+    n: 80
+    method: sdr
+    note: >-
+      The 80 person replicate weights PWEIGHT1-80, in each cycle's replicate-weight file. The
+      Source and Accuracy Statements: "Eighty replicate weights were created for the HPS", with
+      Var = 4/80 Σ (θi - θ̂)² (hps-sa-week01, p. 12; hps-sa-cycle09), and Phase 4.2's statement
+      names the method: "The Census Bureau uses successive difference replication". It cites
+      Judkins (1990) on Fay's method but states no Fay factor, so `fay_factor` is left out.
+      HWEIGHT (from week 13) has its own replicate weights, not in this slice.
 dimensions:
   wave:
-    label: "week"
+    label: "week (2020-2023) or cycle (2024)"
+    note: >-
+      Each week or cycle is one release, so a release holds one wave, named like the release
+      (week01-week63, cycle01-cycle09).
 releases:
   - id: "week01"
-    label: "Household Pulse Survey, Week 1 (April 23 - May 5, 2020) public use file"
+    label: "Household Pulse Survey, Phase 1, Week 1 public use file"
+    status: superseded
+    sources: [hps-week01, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week01_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week01]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week01_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week01]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week02"
+    label: "Household Pulse Survey, Phase 1, Week 2 public use file"
+    status: superseded
+    sources: [hps-week02, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week02_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week02]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week02_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week02]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week03"
+    label: "Household Pulse Survey, Phase 1, Week 3 public use file"
+    status: superseded
+    sources: [hps-week03, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week03_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week03]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week03_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week03]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week04"
+    label: "Household Pulse Survey, Phase 1, Week 4 public use file"
+    status: superseded
+    sources: [hps-week04, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week04_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week04]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week04_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week04]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week05"
+    label: "Household Pulse Survey, Phase 1, Week 5 public use file"
+    status: superseded
+    sources: [hps-week05, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week05_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week05]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week05_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week05]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week06"
+    label: "Household Pulse Survey, Phase 1, Week 6 public use file"
+    status: superseded
+    sources: [hps-week06, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week06_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week06]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week06_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week06]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week07"
+    label: "Household Pulse Survey, Phase 1, Week 7 public use file"
+    status: superseded
+    sources: [hps-week07, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week07_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week07]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week07_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week07]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week08"
+    label: "Household Pulse Survey, Phase 1, Week 8 public use file"
+    status: superseded
+    sources: [hps-week08, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week08_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week08]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week08_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week08]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week09"
+    label: "Household Pulse Survey, Phase 1, Week 9 public use file"
+    status: superseded
+    sources: [hps-week09, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week09_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week09]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week09_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week09]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week10"
+    label: "Household Pulse Survey, Phase 1, Week 10 public use file"
+    status: superseded
+    sources: [hps-week10, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week10_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week10]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week10_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week10]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week11"
+    label: "Household Pulse Survey, Phase 1, Week 11 public use file"
+    status: superseded
+    sources: [hps-week11, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week11_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week11]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week11_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week11]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week12"
+    label: "Household Pulse Survey, Phase 1, Week 12 public use file"
+    status: superseded
+    sources: [hps-week12, hps-user-notes-phase1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week12_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week12]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week12_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week12]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week13"
+    label: "Household Pulse Survey, Phase 2, Week 13 public use file"
+    status: superseded
+    sources: [hps-week13, hps-user-notes-phase2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week13_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week13]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week13_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week13]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week14"
+    label: "Household Pulse Survey, Phase 2, Week 14 public use file"
+    status: superseded
+    sources: [hps-week14, hps-user-notes-phase2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week14_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week14]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week14_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week14]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week15"
+    label: "Household Pulse Survey, Phase 2, Week 15 public use file"
+    status: superseded
+    sources: [hps-week15, hps-user-notes-phase2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week15_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week15]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week15_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week15]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week16"
+    label: "Household Pulse Survey, Phase 2, Week 16 public use file"
+    status: superseded
+    sources: [hps-week16, hps-user-notes-phase2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week16_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week16]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week16_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week16]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week17"
+    label: "Household Pulse Survey, Phase 2, Week 17 public use file"
+    status: superseded
+    sources: [hps-week17, hps-user-notes-phase2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week17_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week17]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week17_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week17]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week18"
+    label: "Household Pulse Survey, Phase 3, Week 18 public use file"
+    status: superseded
+    sources: [hps-week18, hps-user-notes-phase3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week18_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week18]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week18_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week18]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week19"
+    label: "Household Pulse Survey, Phase 3, Week 19 public use file"
+    status: superseded
+    sources: [hps-week19, hps-user-notes-phase3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week19_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week19]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week19_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week19]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week20"
+    label: "Household Pulse Survey, Phase 3, Week 20 public use file"
+    status: superseded
+    sources: [hps-week20, hps-user-notes-phase3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week20_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week20]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week20_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week20]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week21"
+    label: "Household Pulse Survey, Phase 3, Week 21 public use file"
+    status: superseded
+    sources: [hps-week21, hps-user-notes-phase3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week21_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week21]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week21_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week21]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week22"
+    label: "Household Pulse Survey, Phase 3, Week 22 public use file"
+    status: superseded
+    sources: [hps-week22, hps-user-notes-phase3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week22_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week22]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week22_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week22]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week23"
+    label: "Household Pulse Survey, Phase 3, Week 23 public use file"
+    status: superseded
+    sources: [hps-week23, hps-user-notes-phase3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week23_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week23]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week23_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week23]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week24"
+    label: "Household Pulse Survey, Phase 3, Week 24 public use file"
+    status: superseded
+    sources: [hps-week24, hps-user-notes-phase3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week24_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week24]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week24_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week24]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week25"
+    label: "Household Pulse Survey, Phase 3, Week 25 public use file"
+    status: superseded
+    sources: [hps-week25, hps-user-notes-phase3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week25_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week25]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week25_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week25]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week26"
+    label: "Household Pulse Survey, Phase 3, Week 26 public use file"
+    status: superseded
+    sources: [hps-week26, hps-user-notes-phase3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week26_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week26]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week26_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week26]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week27"
+    label: "Household Pulse Survey, Phase 3, Week 27 public use file"
+    status: superseded
+    sources: [hps-week27, hps-user-notes-phase3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week27_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week27]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week27_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week27]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week28"
+    label: "Household Pulse Survey, Phase 3.1, Week 28 public use file"
+    status: superseded
+    sources: [hps-week28, hps-user-notes-phase3-1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week28_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week28]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week28_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week28]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week29"
+    label: "Household Pulse Survey, Phase 3.1, Week 29 public use file"
+    status: superseded
+    sources: [hps-week29, hps-user-notes-phase3-1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week29_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week29]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week29_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week29]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week30"
+    label: "Household Pulse Survey, Phase 3.1, Week 30 public use file"
+    status: superseded
+    sources: [hps-week30, hps-user-notes-phase3-1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week30_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week30]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week30_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week30]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week31"
+    label: "Household Pulse Survey, Phase 3.1, Week 31 public use file"
+    status: superseded
+    sources: [hps-week31, hps-user-notes-phase3-1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week31_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week31]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week31_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week31]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week32"
+    label: "Household Pulse Survey, Phase 3.1, Week 32 public use file"
+    status: superseded
+    sources: [hps-week32, hps-user-notes-phase3-1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week32_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week32]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week32_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week32]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week33"
+    label: "Household Pulse Survey, Phase 3.1, Week 33 public use file"
+    status: superseded
+    sources: [hps-week33, hps-user-notes-phase3-1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week33_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week33]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week33_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week33]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week34"
+    label: "Household Pulse Survey, Phase 3.2, Week 34 public use file"
+    status: superseded
+    sources: [hps-week34, hps-user-notes-phase3-2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week34_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week34]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week34_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week34]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week35"
+    label: "Household Pulse Survey, Phase 3.2, Week 35 public use file"
+    status: superseded
+    sources: [hps-week35, hps-user-notes-phase3-2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week35_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week35]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week35_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week35]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week36"
+    label: "Household Pulse Survey, Phase 3.2, Week 36 public use file"
+    status: superseded
+    sources: [hps-week36, hps-user-notes-phase3-2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week36_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week36]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week36_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week36]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week37"
+    label: "Household Pulse Survey, Phase 3.2, Week 37 public use file"
+    status: superseded
+    sources: [hps-week37, hps-user-notes-phase3-2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week37_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week37]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week37_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week37]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week38"
+    label: "Household Pulse Survey, Phase 3.2, Week 38 public use file"
+    status: superseded
+    sources: [hps-week38, hps-user-notes-phase3-2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week38_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week38]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week38_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week38]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week39"
+    label: "Household Pulse Survey, Phase 3.2, Week 39 public use file"
+    status: superseded
+    sources: [hps-week39, hps-user-notes-phase3-2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week39_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week39]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week39_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week39]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week40"
+    label: "Household Pulse Survey, Phase 3.3, Week 40 public use file"
+    status: superseded
+    sources: [hps-week40, hps-user-notes-phase3-3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week40_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week40]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week40_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week40]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week41"
+    label: "Household Pulse Survey, Phase 3.3, Week 41 public use file"
+    status: superseded
+    sources: [hps-week41, hps-user-notes-phase3-3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week41_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week41]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week41_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week41]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week42"
+    label: "Household Pulse Survey, Phase 3.3, Week 42 public use file"
+    status: superseded
+    sources: [hps-week42, hps-user-notes-phase3-3]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week42_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week42]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week42_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week42]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week43"
+    label: "Household Pulse Survey, Phase 3.4, Week 43 public use file"
+    status: superseded
+    sources: [hps-week43, hps-user-notes-phase3-4]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week43_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week43]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week43_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week43]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week44"
+    label: "Household Pulse Survey, Phase 3.4, Week 44 public use file"
+    status: superseded
+    sources: [hps-week44, hps-user-notes-phase3-4]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week44_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week44]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week44_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week44]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week45"
+    label: "Household Pulse Survey, Phase 3.4, Week 45 public use file"
+    status: superseded
+    sources: [hps-week45, hps-user-notes-phase3-4]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week45_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week45]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week45_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week45]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week46"
+    label: "Household Pulse Survey, Phase 3.5, Week 46 public use file"
+    status: superseded
+    sources: [hps-week46, hps-user-notes-phase3-5]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week46_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week46]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week46_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week46]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week47"
+    label: "Household Pulse Survey, Phase 3.5, Week 47 public use file"
+    status: superseded
+    sources: [hps-week47, hps-user-notes-phase3-5]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week47_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week47]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week47_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week47]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week48"
+    label: "Household Pulse Survey, Phase 3.5, Week 48 public use file"
+    status: superseded
+    sources: [hps-week48, hps-user-notes-phase3-5]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week48_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week48]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week48_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week48]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week49"
+    label: "Household Pulse Survey, Phase 3.6, Week 49 public use file"
+    status: superseded
+    sources: [hps-week49, hps-user-notes-phase3-6]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week49_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week49]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week49_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week49]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week50"
+    label: "Household Pulse Survey, Phase 3.6, Week 50 public use file"
+    status: superseded
+    sources: [hps-week50, hps-user-notes-phase3-6]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week50_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week50]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week50_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week50]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week51"
+    label: "Household Pulse Survey, Phase 3.6, Week 51 public use file"
+    status: superseded
+    sources: [hps-week51, hps-user-notes-phase3-6]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week51_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week51]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week51_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week51]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week52"
+    label: "Household Pulse Survey, Phase 3.7, Week 52 public use file"
+    status: superseded
+    sources: [hps-week52, hps-user-notes-phase3-7]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week52_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week52]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week52_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week52]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week53"
+    label: "Household Pulse Survey, Phase 3.7, Week 53 public use file"
+    status: superseded
+    sources: [hps-week53, hps-user-notes-phase3-7]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week53_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week53]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week53_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week53]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week54"
+    label: "Household Pulse Survey, Phase 3.7, Week 54 public use file"
+    status: superseded
+    sources: [hps-week54, hps-user-notes-phase3-7]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week54_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week54]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week54_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week54]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week55"
+    label: "Household Pulse Survey, Phase 3.8, Week 55 public use file"
+    status: superseded
+    sources: [hps-week55, hps-user-notes-phase3-8]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week55_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week55]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week55_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week55]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week56"
+    label: "Household Pulse Survey, Phase 3.8, Week 56 public use file"
+    status: superseded
+    sources: [hps-week56, hps-user-notes-phase3-8]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week56_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week56]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week56_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week56]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week57"
+    label: "Household Pulse Survey, Phase 3.8, Week 57 public use file"
+    status: superseded
+    sources: [hps-week57, hps-user-notes-phase3-8]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week57_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week57]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week57_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week57]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week58"
+    label: "Household Pulse Survey, Phase 3.9, Week 58 public use file"
+    status: superseded
+    sources: [hps-week58, hps-user-notes-phase3-9]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week58_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week58]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week58_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week58]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week59"
+    label: "Household Pulse Survey, Phase 3.9, Week 59 public use file"
+    status: superseded
+    sources: [hps-week59, hps-user-notes-phase3-9]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week59_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week59]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week59_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week59]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week60"
+    label: "Household Pulse Survey, Phase 3.9, Week 60 public use file"
+    status: superseded
+    sources: [hps-week60, hps-user-notes-phase3-9]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week60_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week60]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week60_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week60]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week61"
+    label: "Household Pulse Survey, Phase 3.10, Week 61 public use file"
+    status: superseded
+    sources: [hps-week61, hps-user-notes-phase3-10]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week61_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week61]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week61_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week61]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week62"
+    label: "Household Pulse Survey, Phase 3.10, Week 62 public use file"
+    status: superseded
+    sources: [hps-week62, hps-user-notes-phase3-10]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week62_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week62]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week62_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week62]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "week63"
+    label: "Household Pulse Survey, Phase 3.10, Week 63 public use file"
+    status: superseded
+    sources: [hps-week63, hps-user-notes-phase3-10]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Week63_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-week63]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Week63_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-week63]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "cycle01"
+    label: "Household Pulse Survey, Phase 4.0, Cycle 01 public use file"
+    status: superseded
+    sources: [hps-cycle01, hps-user-notes-phase4-0]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Phase4Cycle01_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-cycle01]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Phase4Cycle01_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-cycle01]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "cycle02"
+    label: "Household Pulse Survey, Phase 4.0, Cycle 02 public use file"
+    status: superseded
+    sources: [hps-cycle02, hps-user-notes-phase4-0]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Phase4Cycle02_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-cycle02]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Phase4Cycle02_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-cycle02]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "cycle03"
+    label: "Household Pulse Survey, Phase 4.0, Cycle 03 public use file"
+    status: superseded
+    sources: [hps-cycle03, hps-user-notes-phase4-0]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Phase4Cycle03_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-cycle03]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Phase4Cycle03_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-cycle03]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "cycle04"
+    label: "Household Pulse Survey, Phase 4.1, Cycle 04 public use file"
+    status: superseded
+    sources: [hps-cycle04, hps-user-notes-phase4-1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Phase4-1Cycle04_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-cycle04]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Phase4-1Cycle04_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-cycle04]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "cycle05"
+    label: "Household Pulse Survey, Phase 4.1, Cycle 05 public use file"
+    status: superseded
+    sources: [hps-cycle05, hps-user-notes-phase4-1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Phase4-1Cycle05_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-cycle05]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Phase4-1Cycle05_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-cycle05]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "cycle06"
+    label: "Household Pulse Survey, Phase 4.1, Cycle 06 public use file"
+    status: superseded
+    sources: [hps-cycle06, hps-user-notes-phase4-1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Phase4-1Cycle06_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-cycle06]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Phase4-1Cycle06_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-cycle06]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "cycle07"
+    label: "Household Pulse Survey, Phase 4.1, Cycle 07 public use file"
+    status: superseded
+    sources: [hps-cycle07, hps-user-notes-phase4-1]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Phase4-1Cycle07_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-cycle07]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Phase4-1Cycle07_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-cycle07]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "cycle08"
+    label: "Household Pulse Survey, Phase 4.2, Cycle 08 public use file"
+    status: superseded
+    sources: [hps-cycle08, hps-user-notes-phase4-2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Phase4-2Cycle08_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-cycle08]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Phase4-2Cycle08_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-cycle08]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}
+  - id: "cycle09"
+    label: "Household Pulse Survey, Phase 4.2, Cycle 09 public use file"
     status: current
-    sources: [hps-week01]
-    # A release with several data files lists `tables`, each with an id, label,
-    # sources, key and references (STANDARD.md §2.1). Examples: pdt-nsfg, pdt-fars.
+    sources: [hps-cycle09, hps-user-notes-phase4-2]
+    tables:
+      - id: puf
+        label: "Public use file (HPS_Phase4-2Cycle09_PUF_CSV.zip: the PUF CSV)"
+        sources: [hps-cycle09]
+        key: [SCRAM]
+      - id: repwgt
+        label: "Person replicate weights (HPS_Phase4-2Cycle09_PUF_CSV.zip: the replicate-weight CSV)"
+        sources: [hps-cycle09]
+        key: [SCRAM]
+        references:
+          - {columns: [SCRAM], table: puf}

@@ -1,9 +1,55 @@
 # The variables to build, and facts the sources don't give (origin: hand).
-# Edited by hand; read by build/build_records.py.
-release: "week01"
-# Start with 30-50 variables that include the hard cases: a battery, an item
-# asked on only some forms, several wordings, several kinds of missing codes,
-# and anything the publisher has corrected (instructions/03-parse-documentation.md).
-variables: {}
-#  name:
-#    measure: categorical   # categorical, ordinal, continuous, count, identifier, weight, text, date
+# Edited by hand; read by build/build_records.py. The releases themselves are in dataset.yaml.
+author: "Claude (PublicDataToolkit Task 55)"
+date: "2026-11-20"
+
+# The public-use file's variables, built in every cycle whose dictionary has them.
+# kind: id, wave, geo, weight, demographic, item.
+puf:
+  SCRAM:              {kind: id}
+  WEEK:               {kind: wave}
+  CYCLE:              {kind: wave}
+  EST_ST:             {kind: geo}
+  PWEIGHT:            {kind: weight}
+  HWEIGHT:            {kind: weight}
+  TBIRTH_YEAR:        {kind: demographic}
+  EGENDER:            {kind: demographic}
+  EGENID_BIRTH:       {kind: demographic}
+  GENID_DESCRIBE:     {kind: demographic}
+  SEXUAL_ORIENTATION: {kind: demographic}
+  RHISPANIC:          {kind: demographic}
+  RRACE:              {kind: demographic}
+  EEDUC:              {kind: demographic}
+  MS:                 {kind: demographic}
+  THHLD_NUMPER:       {kind: demographic}
+  INCOME:             {kind: demographic}
+  ANXIOUS:            {kind: item}
+  WORRY:              {kind: item}
+  INTEREST:           {kind: item}
+  DOWN:               {kind: item}
+  CURFOODSUF:         {kind: item}
+  PRIFOODSUF:         {kind: item}
+  FREEFOOD:           {kind: item}
+
+# The replicate-weight file: SCRAM, the wave, and PWEIGHT1-80.
+repwgt: {prefix: PWEIGHT, n: 80}
+
+# measure and variable_type by kind (STANDARD.md §4.1).
+kinds:
+  id:          {variable_type: administrative, measure: identifier}
+  wave:        {variable_type: administrative, measure: identifier}
+  geo:         {variable_type: administrative, measure: categorical}
+  weight:      {variable_type: weight, measure: weight}
+  replicate:   {variable_type: weight, measure: weight}
+  demographic: {variable_type: response}
+  item:        {variable_type: response, measure: ordinal}
+
+# Changes between phases that Census's user notes state, as links' origin (source id,
+# location, quote). Keyed by the first cycle of the new phase and the variables.
+documented_changes:
+  - first: week34
+    variables: [ANXIOUS, WORRY, INTEREST, DOWN]
+    relation: wording_changed
+    source: hps-user-notes-phase3-2
+    location: "pp. 1-2, Updated Questions for Phase 3.2 (\"Beginning with Week 34\")"
+    quote: "Mental health question battery - reference period for the four mental health questions on feeling anxious, worrying, losing interest, and feeling down has been changed from last 7 days to previous two weeks"

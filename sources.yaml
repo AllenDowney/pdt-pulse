@@ -16,7 +16,7 @@ sources:
     path: data/raw/HPS_Week01_PUF_CSV.zip
     releases: ["week01"]
     documents: ["week01"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 0e56d5a517948c39d519706f18a473fc95345919b313574b04a072f030bd2226
@@ -29,7 +29,7 @@ sources:
     path: data/raw/HPS_Week02_PUF_CSV.zip
     releases: ["week02"]
     documents: ["week02"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 93a19a5ca5d9789b47aa8c1aeacc34dc339d324540e626682a203a58cceadc5c
@@ -42,7 +42,7 @@ sources:
     path: data/raw/HPS_Week03_PUF_CSV.zip
     releases: ["week03"]
     documents: ["week03"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: c06780a01d7750cad083ea1e05640958fc04e89bd4bb567ab063b9bc4f222f8c
@@ -55,7 +55,7 @@ sources:
     path: data/raw/HPS_Week04_PUF_CSV.zip
     releases: ["week04"]
     documents: ["week04"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: c2fd51769ce00925d80af7a98d0e19fca75bb4bb351fc5efa66519ea0ba814a5
@@ -68,7 +68,7 @@ sources:
     path: data/raw/HPS_Week05_PUF_CSV.zip
     releases: ["week05"]
     documents: ["week05"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: f7577cb6e16c7076eb339431a12100e2e9709512deab03c9eb7ec7017becb3f3
@@ -81,7 +81,7 @@ sources:
     path: data/raw/HPS_Week06_PUF_CSV.zip
     releases: ["week06"]
     documents: ["week06"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: cc0b4c51b2269f448fa993dd92bcef9335544b27b45f0e5bbabafdd01272a79b
@@ -94,7 +94,7 @@ sources:
     path: data/raw/HPS_Week07_PUF_CSV.zip
     releases: ["week07"]
     documents: ["week07"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: f7acc0c9f972332f8893110308f919f8cae11217d441a60f7ed572d9e9eab33a
@@ -107,7 +107,7 @@ sources:
     path: data/raw/HPS_Week08_PUF_CSV.zip
     releases: ["week08"]
     documents: ["week08"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 899bf28003ec4ffea66e8c5eff509debc2b7539e1d4530fe41bbef64eeb3d90d
@@ -120,7 +120,7 @@ sources:
     path: data/raw/HPS_Week09_PUF_CSV.zip
     releases: ["week09"]
     documents: ["week09"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: fbd949fa69c65ca712c097e2fbcf0cd6ec7b561c2f7e371f0d3c668a1cf856b1
@@ -133,7 +133,7 @@ sources:
     path: data/raw/HPS_Week10_PUF_CSV.zip
     releases: ["week10"]
     documents: ["week10"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 4e714166087b6280ed4ca867a9f971c3e16693a108edab16842f345bb29f4882
@@ -146,7 +146,7 @@ sources:
     path: data/raw/HPS_Week11_PUF_CSV.zip
     releases: ["week11"]
     documents: ["week11"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: cc4a2f6c734b52db5f3d1f33eb63b6213407ca5053cf7530943d44f91c399317
@@ -159,7 +159,7 @@ sources:
     path: data/raw/HPS_Week12_PUF_CSV.zip
     releases: ["week12"]
     documents: ["week12"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 90f1d6350181e9cc549f99bb94c0adf6a350a50edc17a3aeaed967b1d364c477
@@ -172,7 +172,7 @@ sources:
     path: data/raw/HPS_Week13_PUF_CSV.zip
     releases: ["week13"]
     documents: ["week13"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 8d5490ce881aae4862bd241cf1f28ff41297bb3fa46576afe2f568efe7ebdea6
@@ -185,7 +185,7 @@ sources:
     path: data/raw/HPS_Week14_PUF_CSV.zip
     releases: ["week14"]
     documents: ["week14"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 89726b0279198492614826610fc54bee9e788c0424b1144402e7080363d15efc
@@ -198,7 +198,7 @@ sources:
     path: data/raw/HPS_Week15_PUF_CSV.zip
     releases: ["week15"]
     documents: ["week15"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 6d1a7dcac5fa683a9a866a2a0e65b1f9aa1b87789c9065abbd8fac3bb9d3d7be
@@ -211,7 +211,7 @@ sources:
     path: data/raw/HPS_Week16_PUF_CSV.zip
     releases: ["week16"]
     documents: ["week16"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 1d98885e420d0e0285fc4bcad32d4292d2840de39b6e02bb0202154088e5f321
@@ -224,7 +224,7 @@ sources:
     path: data/raw/HPS_Week17_PUF_CSV.zip
     releases: ["week17"]
     documents: ["week17"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: c98548be4c3736fbca586447d972171d16622f276a53c614027d68289fc90359
@@ -237,7 +237,7 @@ sources:
     path: data/raw/HPS_Week18_PUF_CSV.zip
     releases: ["week18"]
     documents: ["week18"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 84d1852360ac58dbade7d8a9f66d33b07e2b209e6dbafb66ed1cd013765c7ae2
@@ -250,7 +250,7 @@ sources:
     path: data/raw/HPS_Week19_PUF_CSV.zip
     releases: ["week19"]
     documents: ["week19"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 3aea0276f40e8ffbc58919cf9112328842439608f22011ad23d29ea4d30e9a9c
@@ -263,7 +263,7 @@ sources:
     path: data/raw/HPS_Week20_PUF_CSV.zip
     releases: ["week20"]
     documents: ["week20"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: f1e3000667fa8f6eaef046e58d4f82dd943bae322dc309d43f097f7aabed8cf6
@@ -276,7 +276,7 @@ sources:
     path: data/raw/HPS_Week21_PUF_CSV.zip
     releases: ["week21"]
     documents: ["week21"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: d8ec76430de5a4acc012ad7a3f820fae6c038a5d5a730eb849b1f3a97efa5cbf
@@ -289,7 +289,7 @@ sources:
     path: data/raw/HPS_Week22_PUF_CSV.zip
     releases: ["week22"]
     documents: ["week22"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: b811353f6c88bd54a6c70d3004fe0aea4c0fbdf94787bbab627acecd22e18225
@@ -302,7 +302,7 @@ sources:
     path: data/raw/HPS_Week23_PUF_CSV.zip
     releases: ["week23"]
     documents: ["week23"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: dcdfd82c07a5d7bfd267d01a16c3f638ba8c925a714c5cf2f8e26364007b4e61
@@ -315,7 +315,7 @@ sources:
     path: data/raw/HPS_Week24_PUF_CSV.zip
     releases: ["week24"]
     documents: ["week24"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: dc8d68c977655a92fc83c3c8a3af26bf38be8a10a79fba8c775dff12d9585fd0
@@ -328,7 +328,7 @@ sources:
     path: data/raw/HPS_Week25_PUF_CSV.zip
     releases: ["week25"]
     documents: ["week25"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 7680c45de9454d668822922eb1dea2191ac40071ec1523d13cee67ec3be4793a
@@ -341,7 +341,7 @@ sources:
     path: data/raw/HPS_Week26_PUF_CSV.zip
     releases: ["week26"]
     documents: ["week26"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 942ac98da3aac7af5daca3f6020e2785b23cba24224562d81bca74193760c09c
@@ -354,7 +354,7 @@ sources:
     path: data/raw/HPS_Week27_PUF_CSV.zip
     releases: ["week27"]
     documents: ["week27"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: d5ff38395af1d96bb2ac6a165829279cad954642f13b77e1dd665559eceac82e
@@ -367,7 +367,7 @@ sources:
     path: data/raw/HPS_Week28_PUF_CSV.zip
     releases: ["week28"]
     documents: ["week28"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 11125c6d46388ddf0eaf1f438eb170b574c2f6c2aa6931bc975886b79f352a23
@@ -380,7 +380,7 @@ sources:
     path: data/raw/HPS_Week29_PUF_CSV.zip
     releases: ["week29"]
     documents: ["week29"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 30633f35da8b739629c861fc01de736175f5b4e5a21a8fa30561740071ee9da3
@@ -393,7 +393,7 @@ sources:
     path: data/raw/HPS_Week30_PUF_CSV.zip
     releases: ["week30"]
     documents: ["week30"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 186a58c927245ccbd31efb1edf940d53030a7640a3cb2132b40286b16afe7cb9
@@ -406,7 +406,7 @@ sources:
     path: data/raw/HPS_Week31_PUF_CSV.zip
     releases: ["week31"]
     documents: ["week31"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 1a5caa9a2035e07d09d721ed8a4218eaff3d61bc1ea6212747e7cde25f8a2b51
@@ -419,7 +419,7 @@ sources:
     path: data/raw/HPS_Week32_PUF_CSV.zip
     releases: ["week32"]
     documents: ["week32"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 9a588f570572321626860e2ca64a8804eac18770b681364ac82e9016822f9bb9
@@ -432,7 +432,7 @@ sources:
     path: data/raw/HPS_Week33_PUF_CSV.zip
     releases: ["week33"]
     documents: ["week33"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: a59cb1fbf85f0cdb65e51c6bc4705d5846710299b5a870a3fb2ad3f735bd8c0a
@@ -445,7 +445,7 @@ sources:
     path: data/raw/HPS_Week34_PUF_CSV.zip
     releases: ["week34"]
     documents: ["week34"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 2b9e46299a9e420b0ea23445b2374c20b11cfc6e1fbd8b8e9d496e828b6bad13
@@ -458,7 +458,7 @@ sources:
     path: data/raw/HPS_Week35_PUF_CSV.zip
     releases: ["week35"]
     documents: ["week35"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 12a7f2655a49d5b94c87e5a330d0e1eb65a995cd116bcd058b4d66b28c5833c9
@@ -471,7 +471,7 @@ sources:
     path: data/raw/HPS_Week36_PUF_CSV.zip
     releases: ["week36"]
     documents: ["week36"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 35e3db75c60e260c564fdc7019faa2d764ffd8f0f5c40b4743fca2ec610f38f1
@@ -484,7 +484,7 @@ sources:
     path: data/raw/HPS_Week37_PUF_CSV.zip
     releases: ["week37"]
     documents: ["week37"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: de9c5d452edbfc9e17e667470cadf0ad6151894c012b34677907f89e846adb62
@@ -497,7 +497,7 @@ sources:
     path: data/raw/HPS_Week38_PUF_CSV.zip
     releases: ["week38"]
     documents: ["week38"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 2245ed21a906e3a7ada33c2cfce08cf9bddbe22953ec103a2bc0bf7322e5e57b
@@ -510,7 +510,7 @@ sources:
     path: data/raw/HPS_Week39_PUF_CSV.zip
     releases: ["week39"]
     documents: ["week39"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: c37b7b2fd3f5be8139fff5e48120352aff01de2cd5fd5d17520636e98a1c79f0
@@ -523,7 +523,7 @@ sources:
     path: data/raw/HPS_Week40_PUF_CSV.zip
     releases: ["week40"]
     documents: ["week40"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 34df06716f7860068659d96224e153da5d30684e25183b6d71f62587ff6af82f
@@ -536,7 +536,7 @@ sources:
     path: data/raw/HPS_Week41_PUF_CSV.zip
     releases: ["week41"]
     documents: ["week41"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 10ded9cd7be2e761d47c59284c9aa0b1a16cb474ae37ec7a686462f030a87c0d
@@ -549,7 +549,7 @@ sources:
     path: data/raw/HPS_Week42_PUF_CSV.zip
     releases: ["week42"]
     documents: ["week42"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: a8bcbb36175b1e8a5ace59564d4f5b51704b03a43483ee95d47df0ae62f59030
@@ -562,7 +562,7 @@ sources:
     path: data/raw/HPS_Week43_PUF_CSV.zip
     releases: ["week43"]
     documents: ["week43"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 0cff72e18851d79cf4e68e0b3de36056b7a6f5806f42255fcd75d101b51e2f0a
@@ -575,7 +575,7 @@ sources:
     path: data/raw/HPS_Week44_PUF_CSV.zip
     releases: ["week44"]
     documents: ["week44"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 74914f3040ecc7f39b1131c05f0f6410545a627735d60d90e5dba42decf7bf62
@@ -588,7 +588,7 @@ sources:
     path: data/raw/HPS_Week45_PUF_CSV.zip
     releases: ["week45"]
     documents: ["week45"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 5138754f574add313ec96be16517f83f5faca6bb5f94e4dc441ba59658efb4af
@@ -601,7 +601,7 @@ sources:
     path: data/raw/HPS_Week46_PUF_CSV.zip
     releases: ["week46"]
     documents: ["week46"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: ab34e81d68ecdbd844f898b761a422842109bb2bf35b17f4ad2f5fb08075271b
@@ -614,7 +614,7 @@ sources:
     path: data/raw/HPS_Week47_PUF_CSV.zip
     releases: ["week47"]
     documents: ["week47"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: c180c8f77cf9a941436a4a0673d2e0b75e5677f4c8915a7b0cbe42cd17898e63
@@ -627,7 +627,7 @@ sources:
     path: data/raw/HPS_Week48_PUF_CSV.zip
     releases: ["week48"]
     documents: ["week48"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 85353908b53a9cd651175cc96c9885f20bd9cf2832d6c7a1b246e4a20b5aca60
@@ -640,7 +640,7 @@ sources:
     path: data/raw/HPS_Week49_PUF_CSV.zip
     releases: ["week49"]
     documents: ["week49"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 0e68802e17f71b882bb30ce6c44330e5bf58bad055b9286cd8cf754fcd1bd8c0
@@ -653,7 +653,7 @@ sources:
     path: data/raw/HPS_Week50_PUF_CSV.zip
     releases: ["week50"]
     documents: ["week50"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 3c4cd4d9914c4678c9de3d3b0af65c67532ebb434c537c860c19ffde18f52c38
@@ -666,7 +666,7 @@ sources:
     path: data/raw/HPS_Week51_PUF_CSV.zip
     releases: ["week51"]
     documents: ["week51"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: bd4e2e3e1b7dc8046ad3c9f3c78b4272bfd0ec1a74d9168014449a59f0584060
@@ -679,7 +679,7 @@ sources:
     path: data/raw/HPS_Week52_PUF_CSV.zip
     releases: ["week52"]
     documents: ["week52"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 5c45b81672778e01e59310a4f7f10cd49923ddf31f3771c2415a1d2db7359e5e
@@ -692,7 +692,7 @@ sources:
     path: data/raw/HPS_Week53_PUF_CSV.zip
     releases: ["week53"]
     documents: ["week53"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 86c63e5eefbe4036870c8b45fe281f69d0beb3297f5259647069d8e8e91d97f2
@@ -705,7 +705,7 @@ sources:
     path: data/raw/HPS_Week54_PUF_CSV.zip
     releases: ["week54"]
     documents: ["week54"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 27a56c33969b71d73d6c628f20f4650530e0c0d591efe5e234758b61efb4a310
@@ -718,7 +718,7 @@ sources:
     path: data/raw/HPS_Week55_PUF_SAS.zip
     releases: ["week55"]
     documents: ["week55"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: e9f5788dfb9e9c45715a1a3d55c3b9d322ab66dd393d05620d3661aa960fa09b
@@ -735,7 +735,7 @@ sources:
     path: data/raw/HPS_Week56_PUF_CSV.zip
     releases: ["week56"]
     documents: ["week56"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: bf3566cf20d4cf0e3c39acd17dc2a663dc81ebef3ddf7701ef6694ed9d1c603e
@@ -748,7 +748,7 @@ sources:
     path: data/raw/HPS_Week57_PUF_CSV.zip
     releases: ["week57"]
     documents: ["week57"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: deb8f7ee1d19c9439afae09813cca30435c1b38d264e7b831a6b0205505c7f11
@@ -761,7 +761,7 @@ sources:
     path: data/raw/HPS_Week58_PUF_CSV.zip
     releases: ["week58"]
     documents: ["week58"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 8b8fdf517db496b18e2fab607baa37783caa9f531735f65d4e72791801242230
@@ -774,7 +774,7 @@ sources:
     path: data/raw/HPS_Week59_PUF_CSV.zip
     releases: ["week59"]
     documents: ["week59"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 7a83763f3cdefbdf54a02151d5b485292d49172d78eabb9dfe89155863bb4a4d
@@ -787,7 +787,7 @@ sources:
     path: data/raw/HPS_Week60_PUF_CSV.zip
     releases: ["week60"]
     documents: ["week60"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 2304d3608ed37703555bea01a70c21a846c33ae420102626c397d8485c4cfb71
@@ -800,7 +800,7 @@ sources:
     path: data/raw/HPS_Week61_PUF_CSV.zip
     releases: ["week61"]
     documents: ["week61"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 25f0fc46daa838af026485a10a43f8645a54c483504f569460374995a62fe177
@@ -813,7 +813,7 @@ sources:
     path: data/raw/HPS_Week62_PUF_CSV.zip
     releases: ["week62"]
     documents: ["week62"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 3f84cd543b35d265479694349bdda5524d4b5506353a3ff3056abcc43d4a7d71
@@ -826,7 +826,7 @@ sources:
     path: data/raw/HPS_Week63_PUF_CSV.zip
     releases: ["week63"]
     documents: ["week63"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 74e0f6a49b35504aeadd495f2e69f72b235e48b2fe4d7f39d58f0fef7e6e69b4
@@ -839,7 +839,7 @@ sources:
     path: data/raw/HPS_Phase4Cycle01_PUF_CSV.zip
     releases: ["cycle01"]
     documents: ["cycle01"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: f3e9f3bf6a94dbc8a4b8d46e8720e8a1eb24ccda367c599716db89fc563aedb2
@@ -852,7 +852,7 @@ sources:
     path: data/raw/HPS_Phase4Cycle02_PUF_CSV.zip
     releases: ["cycle02"]
     documents: ["cycle02"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 0f4a197682fb133e907b2d75d9875937fa07fe98e371267cd4300cad46b94d19
@@ -865,7 +865,7 @@ sources:
     path: data/raw/HPS_Phase4Cycle03_PUF_CSV.zip
     releases: ["cycle03"]
     documents: ["cycle03"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 62c0c379584975ce446d4ca115d41c0a5bdbeebfb98eb463f7e4bd0fda0c86e4
@@ -878,7 +878,7 @@ sources:
     path: data/raw/HPS_Phase4-1Cycle04_PUF_CSV.zip
     releases: ["cycle04"]
     documents: ["cycle04"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: ac4661b1e342f6b0cc819c425bf6d8730bb610148b96f078ae5d0dff2806b82c
@@ -891,7 +891,7 @@ sources:
     path: data/raw/HPS_Phase4-1Cycle05_PUF_CSV.zip
     releases: ["cycle05"]
     documents: ["cycle05"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: a0e1ce6900f0fd63ad54481cf7beb1a50a1c9c0e8a7cc36240797ad4d48b2cc5
@@ -904,7 +904,7 @@ sources:
     path: data/raw/HPS_Phase4-1Cycle06_PUF_CSV.zip
     releases: ["cycle06"]
     documents: ["cycle06"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: a08e0d2ad2dc94b4c78ff4221d0895c5c5992ee0c90c344387f3a3b728769403
@@ -917,7 +917,7 @@ sources:
     path: data/raw/HPS_Phase4-1Cycle07_PUF_CSV.zip
     releases: ["cycle07"]
     documents: ["cycle07"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 08be2f74a25bbd05d519ab91d78fcf5855d6b6c53f639e7aeb80ffe9d511afea
@@ -930,7 +930,7 @@ sources:
     path: data/raw/HPS_Phase4-2Cycle08_PUF_CSV.zip
     releases: ["cycle08"]
     documents: ["cycle08"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: cd42679457175df0b8aee022de47bda9125ed4938950daf3ea9cd4c937997e77
@@ -943,7 +943,7 @@ sources:
     path: data/raw/HPS_Phase4-2Cycle09_PUF_CSV.zip
     releases: ["cycle09"]
     documents: ["cycle09"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 95b2f11023056d65bb01296f3c780cbc4cc0ee3cdbef28c1360d3880d61b9519
@@ -957,7 +957,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week01", "week02", "week03", "week04", "week05", "week06", "week07", "week08", "week09", "week10", "week11", "week12"]
     documents: ["week01", "week02", "week03", "week04", "week05", "week06", "week07", "week08", "week09", "week10", "week11", "week12"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 1cfdc027034d0d396cb4db0b2019cacccb61461d63b149d26c8b659914ab06ab
@@ -971,7 +971,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week13", "week14", "week15", "week16", "week17"]
     documents: ["week13", "week14", "week15", "week16", "week17"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 78e9dc9fe63623c88041333bd73dffd8ab9f5f0a9bcada50984dd2d2c13c5c2e
@@ -985,7 +985,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week18", "week19", "week20", "week21", "week22", "week23", "week24", "week25", "week26", "week27"]
     documents: ["week18", "week19", "week20", "week21", "week22", "week23", "week24", "week25", "week26", "week27"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 0ee997b9f87dfb91b37e0a376a76e73120a58f67b119cc55d01f759a13d86e11
@@ -999,7 +999,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week28", "week29", "week30", "week31", "week32", "week33"]
     documents: ["week28", "week29", "week30", "week31", "week32", "week33"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 42df273d3ced0feb9072017f07f1863a1b213984e7ac5c12ed0ebe6f6110ad49
@@ -1013,7 +1013,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week34", "week35", "week36", "week37", "week38", "week39"]
     documents: ["week34", "week35", "week36", "week37", "week38", "week39"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: e14ca7a616ff42dc849eff6c75e10ea1940acee82cc865b7370b57efd2d70fba
@@ -1027,7 +1027,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week40", "week41", "week42"]
     documents: ["week40", "week41", "week42"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 6dd95e35f40e1a4f92b8fc3e0087bcdb46c8c83f671ab47b26130cbdc9261f0f
@@ -1041,7 +1041,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week43", "week44", "week45"]
     documents: ["week43", "week44", "week45"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: a7f17bc6ffe645dd09b54bdab19d6aea166e187a3cbd0fb08191dc3ad42c7c0b
@@ -1055,7 +1055,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week46", "week47", "week48"]
     documents: ["week46", "week47", "week48"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: a50be4ba663fedb960a7e33cd90850ee25359ff3ab9eb80f90a1161722b6e6bb
@@ -1069,7 +1069,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week49", "week50", "week51"]
     documents: ["week49", "week50", "week51"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 6f92e64932eda2a6494c4a8d1a5ad085d88ca26a187006dff43c0f78ddf3dcfa
@@ -1083,7 +1083,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week52", "week53", "week54"]
     documents: ["week52", "week53", "week54"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 9c9ea8f5f645ab4057be5c745d14278f4270f5539f5a17b237f4b19a42f48f42
@@ -1097,7 +1097,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week55", "week56", "week57"]
     documents: ["week55", "week56", "week57"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: e01488f1a047292b852576ddde61b9dfe844ed32e6df26d505a682c917506889
@@ -1111,7 +1111,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week58", "week59", "week60"]
     documents: ["week58", "week59", "week60"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: e1d503df0b85db525a783ba4ccb89c0a9e99604ed2fb21e646f2ae2968a72100
@@ -1125,7 +1125,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week61", "week62", "week63"]
     documents: ["week61", "week62", "week63"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: cb7c332feb0629228a353c2d58864286037308fd8e92cca8caada1c196051eee
@@ -1139,7 +1139,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["cycle01", "cycle02", "cycle03"]
     documents: ["cycle01", "cycle02", "cycle03"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: 14eb33e19da22031b9ee8ae0f74da5b4bf3b4d289c0bc348015a49e9f2a02c8d
@@ -1153,7 +1153,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["cycle04", "cycle05", "cycle06", "cycle07"]
     documents: ["cycle04", "cycle05", "cycle06", "cycle07"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: af2b2796bd30a65d0aeb32b9a01b0a0f24084b0fb995b918d084f15ad9ffd65d
@@ -1167,7 +1167,7 @@ sources:
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["cycle08", "cycle09"]
     documents: ["cycle08", "cycle09"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: aee2a97efa7fd0543d7110fae420014548ab65a13467a10d937418f9669a7347
@@ -1180,7 +1180,7 @@ sources:
     path: data/raw/Source-and-Accuracy-Statement-April-23-May-5-and-May-7-May12.txt
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["week01"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: aec0a0e0f05f7d3a5a617b4277544420edbd5982903282523df9fa17aa4b46f8
@@ -1194,7 +1194,7 @@ sources:
     path: data/raw/Phase4-2_Source_and_Accuracy_Cycle09.txt
     convert: "pdftotext -layout (poppler 24.02)"
     releases: ["cycle09"]
-    redistribution: unknown
+    redistribution: ship
     acquisition: automated
     fetched_on: "2026-11-19"
     sha256: ae328ff9c628a2438133716487b1ff4fbb08e75f8337fbd512770f4fb1416f9b

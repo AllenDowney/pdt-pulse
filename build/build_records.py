@@ -5,7 +5,7 @@ Usage:
 
 Reads build/slice.yaml, dataset.yaml (the releases, in order) and each cycle's data dictionary,
 which is inside its CSV zip in data/raw/. Writes metadata/releases/<release>/{puf,repwgt}/
-variables.jsonl, metadata/groups.jsonl, metadata/links.jsonl and build/report.md.
+variables.jsonl, metadata/groups.jsonl (empty), metadata/links.jsonl and build/report.md.
 
 Where each field comes from (STANDARD.md §3):
 - label, description, question text, universe, notes, values: the cycle's data dictionary
@@ -15,8 +15,9 @@ Where each field comes from (STANDARD.md §3):
   Range (-99, -88) are missing; their types are by rule hps_missing_types, from the label.
   A Range that spans values rather than codes (a birth year, "1:40" people) is a valid_range.
 - measure, variable_type: build/slice.yaml (hand), by kind.
-- the replicate weights PWEIGHT1-80: the dictionary describes them once (or not at all);
-  their records are made by rule hps_replicate_series.
+- the replicate weights PWEIGHT1-80 have no records: dataset.yaml's design.replicates names
+  them, and the data files carry them as plain columns (PublicDataToolkit Task 55 follow-up).
+  The repwgt table's records are its key, SCRAM, and WEEK or CYCLE where the cycle has them.
 - links between consecutive cycles: rule hps_same_name_same_dictionary (0.2: `range_changed` when
   only the valid range moves), or Census's user notes where they state a change (slice.yaml
   `documented_changes`), with the quote as `evidence`.
@@ -41,7 +42,7 @@ import hps  # noqa: E402
 META = ROOT / "metadata"
 DATASET = "pulse"
 RULES = {"strip": ("hps_strip_x000d", "0.1"), "missing": ("hps_missing_types", "0.1"),
-         "series": ("hps_replicate_series", "0.1"), "links": ("hps_same_name_same_dictionary", "0.2")}
+         "links": ("hps_same_name_same_dictionary", "0.2")}
 # Missing types by the dictionary's label (rule hps_missing_types).
 TYPES = {"question seen but category not selected": ["skipped"], "missing / did not report": ["no_answer"]}
 
@@ -145,10 +146,8 @@ def build_puf(release, wave, source, book, cfg, report, columns):
 
 
 def build_repwgt(release, wave, source, book, cfg, puf_names):
-    rule, version = RULES["series"]
-    series = {"origin": "rule", "rule": rule, "rule_version": version, "source": source,
-              "note": f"The replicate-weight file's columns {cfg['repwgt']['prefix']}1-{cfg['repwgt']['n']}, which "
-                      "the dictionary doesn't list one by one."}
+    """The replicate-weight file's records: its key only. The replicate weights themselves are
+    named by dataset.yaml's design.replicates and have no records."""
     hand = {"origin": "hand", "author": cfg["author"], "date": cfg["date"]}
     out = []
     for name in ["SCRAM"] + [n for n in ("WEEK", "CYCLE") if n in puf_names]:
@@ -160,11 +159,6 @@ def build_repwgt(release, wave, source, book, cfg, puf_names):
                     "availability": [{"wave": wave}],
                     "provenance": {"record": {"origin": "publisher", "source": source},
                                    "fields": {"variable_type": hand, "measure": hand}}})
-    for i in range(1, cfg["repwgt"]["n"] + 1):
-        out.append({"dataset": DATASET, "release": release, "table": "repwgt", "name": f"{cfg['repwgt']['prefix']}{i}",
-                    "label": f"Person replicate weight {i}", "storage_type": "float",
-                    "variable_type": "weight", "measure": "weight", "availability": [{"wave": wave}],
-                    "provenance": {"record": series}})
     return out
 
 
@@ -240,13 +234,6 @@ def main():
         rep = build_repwgt(release, wave, src["id"], book, cfg, {x["name"] for x in puf})
         jsonl(META / "releases" / release / "puf" / "variables.jsonl", puf)
         jsonl(META / "releases" / release / "repwgt" / "variables.jsonl", rep)
-        rule, version = RULES["series"]
-        groups.append({"id": f"{release}.replicate-weights", "kind": "other", "label": "Person replicate weights",
-                       "releases": [release], "ordered": True,
-                       "members": [{"release": release, "table": "repwgt", "name": x["name"]} for x in rep
-                                   if x["name"].startswith(cfg["repwgt"]["prefix"])],
-                       "origin": {"origin": "rule", "rule": rule, "rule_version": version, "source": src["id"]},
-                       "note": "The 80 replicate weights of successive difference replication (dataset.yaml design)."})
         missing = [n for n in cfg["puf"] if n not in book]
         report.append(f"- {release}: {len(puf)} puf records; not in this cycle: {', '.join(missing) or 'none'}")
         built.append((release, puf))

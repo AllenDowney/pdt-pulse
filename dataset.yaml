@@ -18,16 +18,19 @@ description: >-
 terms:
   url: "https://www.census.gov/about/policies/open-gov.html"
   summary: >-
-    Not yet decided. The Census Bureau's Open Government page: "The U.S. Census Bureau publishes
+    The Census Bureau's Open Government page: "The U.S. Census Bureau publishes
     its data as open data, meaning it is freely available for use and re-use by the public."
     The PUFs and their documentation are works of a US federal agency. The Census Data API's
     terms of service (https://www.census.gov/data/developers/about/terms-of-service.html) ask
     API products to say they are "not endorsed or certified by the Census Bureau"; this repo
     doesn't use the API.
-  data: unknown
-  documentation: unknown
-  metadata: unknown
-  llm_processing: unknown
+  data: ship
+  documentation: ship
+  metadata: ship
+  llm_processing: allowed
+  reviewed_by: Allen Downey
+  reviewed_on: '2026-11-20'
+  notice: 'Source: U.S. Census Bureau, Household Pulse Survey public use files, 2020-2024. This product is not endorsed or certified by the Census Bureau.'
 design:
   weights: [PWEIGHT]
   replicates:

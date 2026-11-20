@@ -14,7 +14,11 @@ The variables are the identifiers, the person and household weights, the replica
 
 ## Terms of use
 
-Not yet decided: the decision is Allen Downey's, and `dataset.yaml` records the terms as `unknown` until then. The Census Bureau's Open Government page says: "The U.S. Census Bureau publishes its data as open data, meaning it is freely available for use and re-use by the public." The files are works of a US federal agency.
+Allen Downey reviewed the terms on 2026-11-20: the metadata, the documentation and the common-format data ship, with this notice:
+
+> Source: U.S. Census Bureau, Household Pulse Survey public use files, 2020-2024. This product is not endorsed or certified by the Census Bureau.
+
+The Census Bureau's Open Government page says: "The U.S. Census Bureau publishes its data as open data, meaning it is freely available for use and re-use by the public." The files are works of a US federal agency.
 
 ## How to get the data
 
